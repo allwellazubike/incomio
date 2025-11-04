@@ -11,52 +11,53 @@
       rel="stylesheet"
     />
   </head>
-  <body class="satoshi">
+  <body class="satoshi bg-black">
     <header class="bg-black pb-5">
       <!-- navbar -->
       <nav
-        class="container mx-auto pt-4 lg:pt-10 pb-5 pr-5 lg:pr-7 pl-5 lg:pl-7"
+        class="container bg-black fixed z-50 mx-auto w-full -mt-5 lg:pt-10 pb-5 pr-5 lg:pr-7 pl-5 lg:pl-7"
       >
         <div class="flex items-center justify-between space-x-6">
           <div class="">
-            <img
+            <!-- <img
               src="./images/incomioincomio-wordmark-white.png"
               alt="incomio-logo"
               class="w-45 ml-1 md:ml-10 mt-3"
-            />
-            <!-- <h1
+            /> -->
+            <h1
               class="text-white font-bold tracking-normal ml-0.5 md:ml-10 text-[48px] lg:text-5xl"
             >
               incomio
-            </h1> -->
+            </h1>
           </div>
-
+  <!-- class="text-[#ffffff] hidden font-semibold md:hidden lg:flex text-[0.25rem] md:text-[1rem] lg:text-[1rem] flex-row md:mr-2 lg:mr-8 md:space-x-7 md:-mb-2 md:ml-0 lg:ml-14 lg:-mb-3. lg:space-x-12 -->
           <div
-            class="text-[#ffffff] hidden font-semibold md:hidden lg:flex text-[0.25rem] md:text-[1rem] lg:text-[1rem] flex-row md:mr-2 lg:mr-8 md:space-x-7 md:-mb-2 md:ml-0 lg:ml-14 lg:-mb-3. lg:space-x-12"
+          class="hidden lg:flex font-semibold lg:space-x-8 md:space-x-6 text-white"
           >
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Partnership</a>
-            <a href="">Why Us</a>
+            <a href="./digit.html" target="_blank">Digital Product</a>
+            <a href="./app.html" target="_blank">App</a>
+            <a href="./blockchain.html" target="_blank">Blockchain</a>
+            <a href="./ecommerce.html" target="_blank">E-commerce</a>
           </div>
 
           <!-- Mobile Dropdown Menu -->
           <div
             id="mobileMenu"
-            class="hidden lg:hidden fixed top-20 left-0 w-full bg-black/95 z-40 py-8"
+            class="hidden lg:hidden fixed top-20 left-0 w-full bg-black/90 z-40 py-8"
           >
+          <!-- flex flex-col items-center space-y-6 text-white font-semibold text-xl -->
             <div
-              class="flex flex-col items-center space-y-6 text-white font-semibold text-xl"
+              class="text-white items-center font-semibold flex flex-col"
             >
-              <a href="" class="hover:text-blue-400 transition-colors">About</a>
-              <a href="" class="hover:text-blue-400 transition-colors"
-                >Services</a
+              <a href="./digit.html" target="_blank" class="hover:text-blue-400 transition-colors">Digital Product</a>
+
+              <a href="./app.html" target="_blank" class="hover:text-blue-400 transition-colors"
+                >App</a>
+              <a href="./blockchain.html" target="_blank" class="hover:text-blue-400 transition-colors"
+                >Blockchain</a
               >
-              <a href="" class="hover:text-blue-400 transition-colors"
-                >Partnership</a
-              >
-              <a href="" class="hover:text-blue-400 transition-colors"
-                >Why Us</a
+              <a href="./ecommerce.html" target="_blank" class="hover:text-blue-400 transition-colors"
+                >E-commerce</a
               >
             </div>
           </div>
@@ -89,8 +90,9 @@
         </div>
       </nav>
 
+
       <!-- no.1 growth partner -->
-      <div class="flex items-center mt-8 lg:mt-1 justify-center">
+      <div class="flex items-center mt-8 pt-24 lg:mt-1 justify-center">
         <div
           class="inline-flex items-center gap-3 mx-auto backdrop-blur-2xl bg-white/15 rounded-xl mt-6 pl-2 pr-2.5 py-1"
         >
@@ -1054,7 +1056,7 @@
 
     </div>
   </footer>
-
+</header>
     <script>
       const burgerCheckbox = document.getElementById("burger");
       const mobileMenu = document.getElementById("mobileMenu");
