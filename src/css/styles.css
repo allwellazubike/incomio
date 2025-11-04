@@ -21,8 +21,8 @@
    ======================================== */
 .burger {
   position: relative;
-  width: 40px;
-  height: 25px;
+  width: 20px;
+  height: 16px;
   background: transparent;
   cursor: pointer;
   display: block;
