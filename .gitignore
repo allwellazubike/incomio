@@ -1,0 +1,26 @@
+# Node dependencies
+node_modules/
+
+# Build and cache files
+*.log
+*.lock
+dist/
+.cache/
+.tmp/
+
+# Tailwind output (optional if it's large)
+# Uncomment this next line only if you're okay regenerating output.css each time
+# src/css/output.css
+
+# Local development servers
+src/servers/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Environment files (if you ever use them)
+.env

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./output.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+  <title>E-Commerce Studio | Incomio</title>
+  <style>
+    .satoshi {
+      font-family: 'Satoshi', sans-serif;
+    }
+    
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Blue gradient for CTAs */
+    .blue-gradient {
+      background: linear-gradient(135deg, #4169E1, #1E3A8A);
+    }
+    
+    /* CTA Button styling */
+    .cta-btn {
+      background: linear-gradient(135deg, #4169E1, #1E3A8A);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(65, 105, 225, 0.3);
+    }
+    
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(65, 105, 225, 0.4);
+    }
+    
+    /* Navbar styling */
+    nav {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.95);
+    }
+    
+    /* Section fade-in animation */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white satoshi">
+  
+  <!-- ========================================
+       NAVIGATION BAR
+       ======================================== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo Space -->
+        <div class="text-2xl font-bold text-black">
+          <a href="/">INCOMIO</a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#dream" class="text-gray-700 hover:text-black transition-colors">The Dream</a>
+          <a href="#difference" class="text-gray-700 hover:text-black transition-colors">Our Approach</a>
+          <a href="#paths" class="text-gray-700 hover:text-black transition-colors">Partnership Paths</a>
+          <a href="#platforms" class="text-gray-700 hover:text-black transition-colors">Platforms</a>
+          <a href="#process" class="text-gray-700 hover:text-black transition-colors">How It Works</a>
+          <a href="#cta" class="cta-btn px-6 py-2 rounded-full text-white text-sm font-medium">Get Started</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-black">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================
+       HERO SECTION
+       ======================================== -->
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-black mb-8 leading-tight">
+        Build a Profitable<br>E-Commerce Business<br><span class="italic">Without Guesswork</span>
+      </h1>
+      
+      <p class="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto mb-12 leading-relaxed">
+        You've seen the success stories. Now partner with Incomio to build yours. Whether it's Shopify, Amazon, eBay, private label, or multi-channel - we handle the execution, you share the profits. No massive course fees. No guessing. You don't have to figure it out on your own.
+      </p>
+      
+      <a href="#cta" class="cta-btn inline-block px-10 py-4 rounded-full text-white text-lg font-medium">
+        Let's Build Together →
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================
+       THE DREAM SECTION
+       ======================================== -->
+  <section id="dream" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-12 text-center">
+        You've Seen People Making<br>Real Money with E-Commerce
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <p class="text-lg text-gray-800">Shopify stores generating 5-6 figures per month.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <p class="text-lg text-gray-800">Amazon FBA sellers scaling to six figures.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <p class="text-lg text-gray-800">Multi-channel sellers dominating multiple platforms.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg border border-gray-200">
+          <p class="text-lg text-gray-800">Private label brands making millions in sales.</p>
+        </div>
+      </div>
+      
+      <p class="text-2xl font-bold text-center text-black mb-12">
+        You know the opportunity is real.
+      </p>
+      
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold text-black mb-8 text-center">
+          But here's what the gurus don't tell you:
+        </h3>
+        
+        <div class="space-y-6">
+          <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+            <span class="text-red-500 text-xl flex-shrink-0">✕</span>
+            <p class="text-lg text-gray-800">Most people lose so much money testing and marketing products that don't sell</p>
+          </div>
+          
+          <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+            <span class="text-red-500 text-xl flex-shrink-0">✕</span>
+            <p class="text-lg text-gray-800">Store setup is the easy part - driving profitable traffic is where most people fail</p>
+          </div>
+          
+          <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+            <span class="text-red-500 text-xl flex-shrink-0">✕</span>
+            <p class="text-lg text-gray-800">Whether it's Shopify, Amazon FBA, eBay, or your own store, you need to know how to properly navigate the platform for success</p>
+          </div>
+          
+          <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+            <span class="text-red-500 text-xl flex-shrink-0">✕</span>
+            <p class="text-lg text-gray-800">Inventory management can drain your bank account fast</p>
+          </div>
+          
+          <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+            <span class="text-red-500 text-xl flex-shrink-0">✕</span>
+            <p class="text-lg text-gray-800">One bad supplier can drag your brand back</p>
+          </div>
+          
+          <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+            <span class="text-red-500 text-xl flex-shrink-0">✕</span>
+            <p class="text-lg text-gray-800">Choosing the wrong platform wastes months of your time</p>
+          </div>
+        </div>
+        
+        <p class="text-2xl font-bold text-center text-black mt-16">
+          You need more than a course.<br>
+          <span class="text-blue-600">You need a partner who's genuinely passionate about your success.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       THE INCOMIO DIFFERENCE SECTION
+       ======================================== -->
+  <section id="difference" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center">
+        How We Do E-Commerce<br><span class="italic">Differently</span>
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="border-l-4 border-black pl-6">
+            <h3 class="text-2xl font-bold text-black mb-3">No $1k-$10k Courses</h3>
+            <p class="text-lg text-gray-700">We don't sell you information. We pour in our time and build the business with you.</p>
+          </div>
+          
+          <div class="border-l-4 border-black pl-6">
+            <h3 class="text-2xl font-bold text-black mb-3">No Guessing on Products or Platforms</h3>
+            <p class="text-lg text-gray-700">We research, validate, and choose the right model for your goals. You don't waste money on products that won't sell or platforms that don't fit.</p>
+          </div>
+        </div>
+        
+        <div class="space-y-6">
+          <div class="border-l-4 border-black pl-6">
+            <h3 class="text-2xl font-bold text-black mb-3">No Handling It Alone</h3>
+            <p class="text-lg text-gray-700">From store setup to traffic to fulfillment - we're in it with you at every step.</p>
+          </div>
+          
+          <div class="border-l-4 border-black pl-6">
+            <h3 class="text-2xl font-bold text-black mb-3">No Massive Upfront Investment</h3>
+            <p class="text-lg text-gray-700">No huge consulting fees. We share the risk. When the store makes money, we both make money.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       TWO PARTNERSHIP PATHS SECTION
+       ======================================== -->
+  <section id="paths" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center">
+        Two Ways to Partner
+      </h2>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Path 1 -->
+        <div class="bg-white p-10 rounded-2xl border-2 border-gray-200">
+          <div class="bg-black text-white px-4 py-2 rounded-full inline-block mb-6 text-sm font-bold">PATH 1</div>
+          <h3 class="text-3xl font-bold text-black mb-4">You Have a Product/Niche Idea</h3>
+          <p class="text-xl text-gray-700 mb-8">You Know What You Want to Sell</p>
+          <p class="text-lg text-gray-700 mb-8">
+            Maybe you've spotted a gap in the market. Maybe you have an audience that needs specific products. Maybe you just know what should exist.
+          </p>
+          
+          <div class="mb-8">
+            <h4 class="text-xl font-bold text-black mb-4">You bring:</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Your product or niche idea</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Market knowledge or audience (if you have it)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Your commitment</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-xl font-bold text-black mb-4">We bring:</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Platform selection and store setup</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Product sourcing and supplier vetting</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Store design and conversion optimization</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Traffic strategy (ads, SEO, influencers)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Operations and fulfillment coordination</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Path 2 -->
+        <div class="bg-white p-10 rounded-2xl border-2 border-blue-600">
+          <div class="blue-gradient text-white px-4 py-2 rounded-full inline-block mb-6 text-sm font-bold">PATH 2</div>
+          <h3 class="text-3xl font-bold text-black mb-4">We Have Profitable Niches Researched</h3>
+          <p class="text-xl text-gray-700 mb-8">We've Found the Opportunities</p>
+          <p class="text-lg text-gray-700 mb-8">
+            We've researched profitable products, niches, and e-commerce models. We just need the right partner - someone who understands the audience or can create content around the products.
+          </p>
+          
+          <div class="mb-8">
+            <h4 class="text-xl font-bold text-black mb-4">We bring:</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Validated product and model research</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Full store build and launch</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Marketing and traffic generation</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Operations and scaling</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-xl font-bold text-black mb-4">You bring:</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Expertise in the niche (fitness, beauty, pets, tech, etc.)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Content creation or audience building skills</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Customer connection</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Little startup fund</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       PLATFORMS & MODELS SECTION
+       ======================================== -->
+  <section id="platforms" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center">
+        E-Commerce Models &<br>Platforms We Build
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
+          <h3 class="text-2xl font-bold text-black mb-4">Shopify DTC Stores</h3>
+          <p class="text-gray-700">Full control over your brand, pricing, and customer experience. Perfect for building a sellable asset.</p>
+        </div>
+        
+        <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
+          <h3 class="text-2xl font-bold text-black mb-4">Amazon FBA</h3>
+          <p class="text-gray-700">Leverage Amazon's massive traffic and fulfillment. Launch private label products without warehousing headaches.</p>
+        </div>
+        
+        <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
+          <h3 class="text-2xl font-bold text-black mb-4">eBay Stores</h3>
+          <p class="text-gray-700">Tap into eBay's established marketplace and buyer base. Great for unique products and collectibles.</p>
+        </div>
+        
+        <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
+          <h3 class="text-2xl font-bold text-black mb-4">Private Label E-Commerce</h3>
+          <p class="text-gray-700">Build your own branded products and sell across multiple platforms or your own store.</p>
+        </div>
+        
+        <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
+          <h3 class="text-2xl font-bold text-black mb-4">Multi-Channel E-Commerce</h3>
+          <p class="text-gray-700">Why choose one platform? Sell on Shopify + Amazon + eBay + other platforms simultaneously to maximize reach and revenue.</p>
+        </div>
+        
+        <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
+          <h3 class="text-2xl font-bold text-black mb-4">Subscription E-Commerce</h3>
+          <p class="text-gray-700">Recurring revenue through monthly product deliveries. The holy grail of e-commerce cash flow.</p>
+        </div>
+        
+        <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors md:col-span-2 lg:col-span-1">
+          <h3 class="text-2xl font-bold text-black mb-4">Print on Demand</h3>
+          <p class="text-gray-700">Test designs and products with zero inventory risk. Scale what sells.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       WHO THIS IS FOR SECTION
+       ======================================== -->
+  <section class="py-20 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center">
+        This Is For You If…
+      </h2>
+      
+      <div class="space-y-6">
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+          <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
+          <p class="text-lg text-gray-800">You've been watching e-commerce success stories and want to build your own</p>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+          <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
+          <p class="text-lg text-gray-800">You've bought courses but got stuck on execution</p>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+          <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
+          <p class="text-lg text-gray-800">You have a product idea but don't know how to validate or launch it</p>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+          <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
+          <p class="text-lg text-gray-800">You have an audience and want to monetize with physical products</p>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+          <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
+          <p class="text-lg text-gray-800">You're a coach/expert in a niche and see product opportunities</p>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+          <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
+          <p class="text-lg text-gray-800">You want to own an e-commerce business but don't want to handle everything solo</p>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+          <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
+          <p class="text-lg text-gray-800">You're tired of trading time for money and want scalable revenue</p>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+          <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
+          <p class="text-lg text-gray-800">You're not sure which platform is right (Shopify? Amazon? Multi-channel?) and need guidance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       HOW IT WORKS SECTION
+       ======================================== -->
+  <section id="process" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center">
+        Simple Process,<br><span class="italic">Real Results</span>
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="relative">
+          <div class="absolute top-0 left-0 w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold">1</div>
+          <div class="ml-20">
+            <h3 class="text-2xl font-bold text-black mb-4">Free Discovery Call (30 mins)</h3>
+            <p class="text-lg text-gray-700">We talk about your idea or show you opportunities we've researched. No sales pitch. Just honest conversation about which e-commerce model fits best.</p>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="absolute top-0 left-0 w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold">2</div>
+          <div class="ml-20">
+            <h3 class="text-2xl font-bold text-black mb-4">Partnership Agreement</h3>
+            <p class="text-lg text-gray-700">If we're a fit, we agree on equity split, roles, and profit distribution. Everything documented clearly.</p>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="absolute top-0 left-0 w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold">3</div>
+          <div class="ml-20">
+            <h3 class="text-2xl font-bold text-black mb-4">Build & Launch</h3>
+            <p class="text-lg text-gray-700">We build the store, source products, set up payment/fulfillment, and launch to first customers on the right platform(s).</p>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="absolute top-0 left-0 w-16 h-16 blue-gradient text-white rounded-full flex items-center justify-center text-2xl font-bold">4</div>
+          <div class="ml-20">
+            <h3 class="text-2xl font-bold text-black mb-4">Grow & Scale</h3>
+            <p class="text-lg text-gray-700">We drive traffic, optimize conversions, manage operations. You focus on what you do best. We both profit as revenue grows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       OBJECTION CRUSHER / FAQ SECTION
+       ======================================== -->
+  <section class="py-20 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center">
+        Your Questions,<br>Answered
+      </h2>
+      
+      <div class="space-y-8">
+        <div class="bg-white p-8 rounded-xl border border-gray-200">
+          <h3 class="text-2xl font-bold text-black mb-4">"What if I don't have an audience?"</h3>
+          <p class="text-lg text-gray-700">Not required. We can drive cold traffic. An audience helps but isn't mandatory.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-xl border border-gray-200">
+          <h3 class="text-2xl font-bold text-black mb-4">"How do I know which platform is right for me?"</h3>
+          <p class="text-lg text-gray-700">That's our job. We assess your product, budget, goals, and skills - then recommend the best platform or multi-channel strategy.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-xl border border-gray-200">
+          <h3 class="text-2xl font-bold text-black mb-4">"How long until I see revenue?"</h3>
+          <p class="text-lg text-gray-700">E-commerce takes time to scale, but we optimize quickly to deliver profits from month one. We focus on profitability from the start, not burning cash at a loss for months like many others do.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FINAL CTA SECTION
+       ======================================== -->
+  <section id="cta" class="py-32 px-6 bg-black">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
+        Stop Watching Other People Win<br>In The E-Commerce Space
+      </h2>
+      
+      <p class="text-xl sm:text-2xl text-gray-300 mb-12 leading-relaxed">
+        You know the opportunity is real. You know waiting won't make it easier. Partner with people who know what works and who want you to succeed as much as they do.
+      </p>
+      
+      <p class="text-xl text-gray-300 mb-10">
+        No courses. No massive fees. Just a conversation about building something profitable together.
+      </p>
+      
+      <a href="YOUR_CALENDLY_LINK_HERE" target="_blank" class="cta-btn inline-block px-12 py-5 rounded-full text-white text-xl font-bold mb-6">
+        Start the Conversation →
+      </a>
+      
+      <p class="text-gray-400 text-sm">
+        Free 30-minute discovery call. No pressure. No pitch.<br>Just honest talk about what we can build together.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="bg-white border-t border-gray-200 py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Footer Content -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-black text-2xl font-bold mb-4">Incomio</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            E-Commerce Studio - Your collaborative venture partner for building profitable online stores.
+          </p>
+        </div>
+
+        <!-- Studios -->
+        <div>
+          <h4 class="text-black font-bold mb-4">Our Studios</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-black transition-colors text-sm">E-Commerce Studio</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-black transition-colors text-sm">Digital Products Studio</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-black transition-colors text-sm">App Studio</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-black transition-colors text-sm">Blockchain Studio</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-black font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#dream" class="text-gray-600 hover:text-black transition-colors text-sm">The Dream</a></li>
+            <li><a href="#difference" class="text-gray-600 hover:text-black transition-colors text-sm">Our Approach</a></li>
+            <li><a href="#paths" class="text-gray-600 hover:text-black transition-colors text-sm">Partnership Paths</a></li>
+            <li><a href="#platforms" class="text-gray-600 hover:text-black transition-colors text-sm">Platforms</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-black font-bold mb-4">Get in Touch</h4>
+          <ul class="space-y-2">
+            <li><a href="mailto:hello@incomio.com" class="text-gray-600 hover:text-black transition-colors text-sm">hello@incomio.com</a></li>
+            <li><a href="YOUR_CALENDLY_LINK_HERE" class="text-gray-600 hover:text-black transition-colors text-sm">Book a Call</a></li>
+          </ul>
+          <!-- Social Links -->
+          <div class="flex gap-3 mt-4">
+            <a href="#" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-black hover:text-white flex items-center justify-center transition-colors">
+              <span class="text-sm">𝕏</span>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-black hover:text-white flex items-center justify-center transition-colors">
+              <span class="text-sm">in</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-gray-200 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-gray-500 text-sm">
+          © Incomio 2025. All rights reserved.
+        </p>
+        <div class="flex gap-6">
+          <a href="#" class="text-gray-500 hover:text-black transition-colors text-sm">Privacy Policy</a>
+          <a href="#" class="text-gray-500 hover:text-black transition-colors text-sm">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
+
