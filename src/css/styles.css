@@ -1,13 +1,18 @@
 /* ========================================
    HERO SECTION
    ======================================== */
-#hero-section {
+/* #hero-section {
   background-image: url('./images/incomio1-0.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
+} */
+html {
+  scroll-behavior: smooth;
 }
+
+
 
 /* ========================================
    FONTS
