@@ -1,13 +1,18 @@
 /* ========================================
    HERO SECTION
    ======================================== */
-#hero-section {
+/* #hero-section {
   background-image: url('./images/incomio1-0.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
+} */
+html {
+  scroll-behavior: smooth;
 }
+
+
 
 /* ========================================
    FONTS
@@ -21,8 +26,8 @@
    ======================================== */
 .burger {
   position: relative;
-  width: 40px;
-  height: 25px;
+  width: 20px;
+  height: 16px;
   background: transparent;
   cursor: pointer;
   display: block;
