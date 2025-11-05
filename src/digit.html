@@ -19,13 +19,26 @@
       transform:translateY(-2px);
       box-shadow:0 8px 25px rgba(65,105,225,.4);
     }
+
+
+
+
+
+      .cta-btn {
+      background: linear-gradient(135deg, #0196FF 0%, #0170CC 100%);
+    }
+    .cta-btn:hover {
+      background: linear-gradient(135deg, #0170CC 0%, #015AA8 100%);
+    }
+
+
     nav{backdrop-filter:blur(10px);background:rgba(255,255,255,.95)}
   </style>
 </head>
 <body class="bg-white satoshi">
 
   <!-- NAVIGATION -->
-  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+  <!-- <nav class="fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-6 py-4">
       <div class="flex items-center justify-between">
         <div class="w-[135px] font-bold text-black">
@@ -46,7 +59,50 @@
         </button>
       </div>
     </div>
+  </nav> -->
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="w-[135px] font-bold text-black">
+          <img src="./images/incomioincomio-wordmark-black.png" alt="Incomio Logo">
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="./index.html" target="_blank" class="text-gray-700 hover:text-black transition-colors">Home</a>
+          <a href="#difference" class="text-gray-700 hover:text-black transition-colors">Our Approach</a>
+          <a href="#paths" class="text-gray-700 hover:text-black transition-colors">Partnership Paths</a>
+          <a href="#products" class="text-gray-700 hover:text-black transition-colors">Products</a>
+          <a href="#process" class="text-gray-700 hover:text-black transition-colors">How It Works</a>
+          <a href="https://calendly.com/didiazubike/strategy-call" class="cta-btn px-6 py-2 rounded-full text-white text-sm font-medium">Get Started</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="md:hidden text-black">
+          <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200 shadow-lg">
+      <div class="px-6 py-4 space-y-3">
+        <a href="./index.html" target="_blank" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Home</a>
+        <a href="#difference" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Our Approach</a>
+        <a href="#paths" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Partnership Paths</a>
+        <a href="#products" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Products</a>
+        <a href="#process" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">How It Works</a>
+        <a href="https://calendly.com/didiazubike/strategy-call" class="block cta-btn px-6 py-3 rounded-full text-white text-sm font-medium text-center mt-4">Get Started</a>
+      </div>
+    </div>
   </nav>
+
 
   <!-- HERO -->
   <section id="heroSection" class="pt-32 pb-20 px-6">
@@ -591,6 +647,30 @@
       </div>
     </div>
   </footer>
+
+ <script>
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const hamburgerIcon = document.getElementById('hamburgerIcon');
+  const closeIcon = document.getElementById('closeIcon');
+
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    hamburgerIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
+
+  // Close menu when clicking on a link
+  const mobileLinks = mobileMenu.querySelectorAll('a');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      hamburgerIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    });
+  });
+</script>
+
 
 </body>
 </html>
