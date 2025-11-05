@@ -6,6 +6,7 @@
 <link href="./output.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/incomioboxed-icon-black-white.png" type="image/x-icon">
   <title>E-Commerce Studio | Incomio</title>
   <style>
     .satoshi {
@@ -57,11 +58,16 @@
       }
     }
 
+          /* CTA Button styling */
     .cta-btn {
-      background: linear-gradient(135deg, #0196FF 0%, #0170CC 100%);
+      background: linear-gradient(135deg, #4169E1, #1E3A8A);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(65, 105, 225, 0.3);
     }
+    
     .cta-btn:hover {
-      background: linear-gradient(135deg, #0170CC 0%, #015AA8 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(65, 105, 225, 0.4);
     }
   </style>
 </head>

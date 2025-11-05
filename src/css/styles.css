@@ -330,7 +330,7 @@ html {
 }
 
 .equals-connector {
-  width: 100px;
+  width: 50px;
   height: 6px;
   background: linear-gradient(90deg, #4169E1, #fbbf24);
   position: relative;
@@ -400,6 +400,7 @@ html {
   bottom: 0;
   pointer-events: none;
 }
+
 
 @media (max-width: 1023px) {
   .plus-connector {
