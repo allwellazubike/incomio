@@ -3,112 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="./css/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/texthome.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="./images/incomioboxed-icon-black-white.png" type="image/x-icon">
+    <link
+      rel="icon"
+      href="./images/incomioboxed-icon-black-white.png"
+      type="image/x-icon"
+    />
 
-    <title>Home Page </title>
+    <title>Home Page</title>
   </head>
   <body class="satoshi bg-black">
     <header class="bg-black pb-5">
       <!-- navbar -->
       <nav
-  class="bg-black fixed z-50 mx-auto w-full top-0 lg:pt-5 pb-2 pr-5 lg:pr-7 pl-5 lg:pl-7"
->
-  <div class="flex items-center justify-between space-x-6">
-    <div class="">
-      <img src="./images/incomioincomio-wordmark-white.png" class="w-[135px] ml-0.5 md:ml-10 pt-4 pb-3" alt="Incomio log ">
-      <!-- <h1
-        class="text-white font-bold tracking-normal ml-0.5 md:ml-10 text-[35px] lg:text-5xl"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        class="bg-black fixed z-50 mx-auto w-full top-0 lg:pt-5 pb-2 pr-5 lg:pr-7 pl-5 lg:pl-7"
       >
-        incomio
-      </h1> -->
-    </div>
+        <div class="flex items-center justify-between space-x-6">
+          <div class="">
+            <img
+              src="./images/incomioincomio-wordmark-white.png"
+              class="w-[135px] ml-0.5 md:ml-10 pt-4 pb-3"
+              alt="Incomio log "
+            />
+          </div>
 
-    <div
-      class="hidden lg:flex font-semibold lg:space-x-8 md:space-x-6 text-white"
-    >
-      <a href="./digit.html" target="_blank">Digital Products</a>
-      <a href="./app.html" target="_blank">Apps</a>
-      <a href="./blockchain.html" target="_blank">Blockchain</a>
-      <a href="./ecommerce.html" target="_blank">E-commerce</a>
-    </div>
+          <div
+            class="hidden lg:flex font-semibold lg:space-x-8 md:space-x-6 text-white"
+          >
+            <a href="./digit.html" target="_blank">Digital Products</a>
+            <a href="./app.html" target="_blank">Apps</a>
+            <a href="./blockchain.html" target="_blank">Blockchain</a>
+            <a href="./ecommerce.html" target="_blank">E-commerce</a>
+          </div>
 
-    <!-- Mobile Dropdown Menu -->
-    <div
-      id="mobileMenu"
-      class="hidden lg:hidden fixed top-[72px] left-0 w-full bg-black z-40 shadow-2xl border-t border-neutral-800"
-    >
-      <!-- Main Links -->
-      <div
-        class="flex flex-col space-y-1 text-white font-semibold text-lg p-4"
-      >
-        <a
-          href="./digit.html"
-          target="_blank"
-          class="block w-full text-left py-4 px-6 rounded-xl hover:bg-neutral-800/50 hover:text-[#0196FF] transition-all duration-200 border-b border-neutral-800/30"
-          >Digital Product</a
-        >
-        <a
-          href="./app.html"
-          target="_blank"
-          class="block w-full text-left py-4 px-6 rounded-xl hover:bg-neutral-800/50 hover:text-[#0196FF] transition-all duration-200 border-b border-neutral-800/30"
-          >App</a
-        >
-        <a
-          href="./blockchain.html"
-          target="_blank"
-          class="block w-full text-left py-4 px-6 rounded-xl hover:bg-neutral-800/50 hover:text-[#0196FF] transition-all duration-200 border-b border-neutral-800/30"
-          >Blockchain</a
-        >
-        <a
-          href="./ecommerce.html"
-          target="_blank"
-          class="block w-full text-left py-4 px-6 rounded-xl hover:bg-neutral-800/50 hover:text-[#0196FF] transition-all duration-200"
-          >E-commerce</a
-        >
-      </div>
-    </div>
+          <!-- Mobile Dropdown Menu -->
+          <div
+            id="mobileMenu"
+            class="hidden lg:hidden fixed top-[72px] left-0 w-full bg-black z-40 shadow-2xl border-t border-neutral-800"
+          >
+            <!-- Main Links -->
+            <div
+              class="flex flex-col space-y-1 text-white font-semibold text-lg p-4"
+            >
+              <a
+                href="./digit.html"
+                target="_blank"
+                class="block w-full text-left py-4 px-6 rounded-xl hover:bg-neutral-800/50 hover:text-[#0196FF] transition-all duration-200 border-b border-neutral-800/30"
+                >Digital Products</a
+              >
+              <a
+                href="./app.html"
+                target="_blank"
+                class="block w-full text-left py-4 px-6 rounded-xl hover:bg-neutral-800/50 hover:text-[#0196FF] transition-all duration-200 border-b border-neutral-800/30"
+                >Apps</a
+              >
+              <a
+                href="./blockchain.html"
+                target="_blank"
+                class="block w-full text-left py-4 px-6 rounded-xl hover:bg-neutral-800/50 hover:text-[#0196FF] transition-all duration-200 border-b border-neutral-800/30"
+                >Blockchain</a
+              >
+              <a
+                href="./ecommerce.html"
+                target="_blank"
+                class="block w-full text-left py-4 px-6 rounded-xl hover:bg-neutral-800/50 hover:text-[#0196FF] transition-all duration-200"
+                >E-commerce</a
+              >
+            </div>
+          </div>
 
-    <!-- drop down menu for mobile -->
-    <label
-      for="burger"
-      class="burger lg:hidden! mr-1.5 md:mr-7 mt-3 cursor-pointer"
-    >
-      <input id="burger" type="checkbox" />
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+          <!-- drop down menu for mobile -->
+          <label
+            for="burger"
+            class="burger lg:hidden! mr-1.5 md:mr-7 mt-3 cursor-pointer"
+          >
+            <input id="burger" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
 
-    <!-- Nav bar book a call button -->
-    <div
-      class="bg-[#0196FF] hidden md:hidden cta-button lg:block satoshi transition-transform rounded-full ml-8 pb-1.5 pt-1 mr-15 px-4"
-    >
-      <a href="https://calendly.com/didiazubike/strategy-call" class="text-[#ffffff] font-semibold text-[0.975rem]"
-        >Book A Call</a
-      >
-    </div>
-  </div>
-</nav>
-
+          <!-- Nav bar book a call button -->
+          <div
+            class="bg-[#0196FF] hidden md:hidden cta-button lg:block satoshi transition-transform rounded-full ml-8 pb-1.5 pt-1 mr-15 px-4"
+          >
+            <a
+              href="https://calendly.com/didiazubike/strategy-call"
+              class="text-[#ffffff] font-semibold text-[0.975rem]"
+              >Book A Call</a
+            >
+          </div>
+        </div>
+      </nav>
 
       <!-- no.1 growth partner -->
-      <div class="flex items-center mt-8 pt-12 md:pt-25 lg:pt-24 lg:mt-1 justify-center">
+      <div
+        class="flex items-center mt-8 pt-12 md:pt-25 lg:pt-24 lg:mt-1 justify-center"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
         <div
           class="inline-flex items-center gap-3 mx-auto backdrop-blur-2xl bg-white/15 rounded-xl mt-6 pl-2 pr-2.5 py-1"
         >
           <!-- No.1 Badge -->
           <div
-  style="background-image: linear-gradient(to right, #3b82f6, #60a5fa); color: #ffffff; font-size: 0.75rem; line-height: 1rem; font-weight: 600; padding-left: 0.375rem; padding-right: 0.375rem; padding-top: 0.125rem; padding-bottom: 0.125rem; border-radius: 0.5rem;"
->
-  No. 1
-</div>
+            style="background-image: linear-gradient(to right, #3b82f6, #60a5fa); color: #ffffff; font-size: 0.75rem; line-height: 1rem; font-weight: 600; padding-left: 0.375rem; padding-right: 0.375rem; padding-top: 0.125rem; padding-bottom: 0.125rem; border-radius: 0.5rem;"
+          >
+            No. 1
+          </div>
 
           <!-- Text -->
           <span class="text-white text-xs font-medium whitespace-nowrap">
@@ -117,79 +128,70 @@
         </div>
       </div>
 
-
-<!-- build with incomio  -->
+      <!-- build with incomio  -->
       <div class="text-center">
-        
-        <div>
-          <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
-        Build  Profitable<br>Businesses Without<br><span class="italic"> Any Guesswork</span>
-      </h1>
-          <!-- <h1
-            class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-center text-white/85 backdrop-blur-xs leading-14 mt-1.5 md:mt-3 lg:mt-15 mx-auto max-w-[350px] md:max-w-3xl"
+        <div data-aos="fade-up" data-aos-delay="300">
+          <h1
+            class="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold text-white mb-8 leading-tight"
           >
-            Build Profitable Businesses Without Any Guesswork.
-          </h1> -->
+            Build Profitable<br />Businesses Without<br /><span class="italic">
+              Any Guesswork</span
+            >
+          </h1>
         </div>
 
-        <!-- laptop view book a call button -->
+        <!-- at incomio tablet and higher  -->
+        <div
+          class="mx-auto hidden md:block text-center"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <p
+            class="text-xl sm:text-2xl text-white max-w-4xl mx-auto mb-12 leading-relaxed"
+          >
+            At Incomio, we partner with ambitious entrepreneurs to build, launch,
+            and scale digital businesses - without the guesswork. You bring the
+            expertise, we bring the growth engine.
+          </p>
+        </div>
 
-        
-
-        <!-- at incomio tablet and higher  -->
-        <!-- <div class="mx-auto hidden md:block text-center">
+        <!-- at incomio mobile -->
+        <div
+          class="mx-auto block md:hidden text-center"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <h1
             class="text-[#ffffff] text-[1rem] lg:text-xl max-w-[374px] lg:max-w-5xl mt-5 lg:mt-14 font-medium lg:font-semibold mx-auto"
           >
-            At Incomio, we partner with ambitious entrepreneurs, experts, and
-            creators to build, launch, and scale profitable digital businesses -
-            without the heavy consulting fees.
-          </h1>
-        </div> -->
-
-         <!-- at incomio mobile -->
-        <!-- at incomio tablet and higher  -->
-        <div class="mx-auto hidden md:block text-center">
-          <p class="text-xl sm:text-2xl text-white max-w-4xl mx-auto mb-12 leading-relaxed">
-        You've seen the success stories. Now partner with Incomio to build yours. Whether it's Shopify, Amazon, eBay, private label, or multi-channel - we handle the execution, you share the profits. No massive course fees. No guessing. You don't have to figure it out on your own.
-      </p>
-        </div>
-
-         <!-- at incomio mobile -->
-        <div class="mx-auto block md:hidden text-center">
-          <h1
-            class="text-[#ffffff] text-[1rem] lg:text-xl max-w-[374px] lg:max-w-5xl mt-5 lg:mt-14 font-medium lg:font-semibold mx-auto"
-          >
-            At Incomio, we partner with ambitious entrepreneurs to build, launch, and scale digital 
-            businesses - without the guesswork. You bring the expertise, we bring the growth engine.
+            At Incomio, we partner with ambitious entrepreneurs to build, launch,
+            and scale digital businesses - without the guesswork. You bring the
+            expertise, we bring the growth engine.
           </h1>
         </div>
 
-        <!-- book a call button for mobile  -->
-         <div class="text-center  mt-13">
-        <a href="https://calendly.com/didiazubike/strategy-call" target="_blank" class="cta-button inline-block px-10 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 rounded-full text-white text-lg sm:text-xl md:text-2xl font-bold hover:scale-105 transition-transform">
-          Book a Call →
-        </a>
-      </div>
-
-        <!-- <hr class="border-white hidden md:block mt-7 border-t-2 w-lg mx-auto" /> -->
-
-        <!-- 2nd text for hero section  -->
-        <!-- <div class="mx-auto text-center">
-          <h1
-            class="text-[#ffffff] text-xl hidden md:block max-w-xl mt-8 font-normal mx-auto"
+        <!-- book a call button for mobile  -->
+        <div class="text-center mt-13" data-aos="fade-up" data-aos-delay="500">
+          <a
+            href="https://calendly.com/didiazubike/strategy-call"
+            target="_blank"
+            class="cta-button inline-block px-10 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 rounded-full text-white text-lg sm:text-xl md:text-2xl font-bold hover:scale-105 transition-transform"
           >
-            We bring the strategy, systems, execution, and growth engine. You
-            bring your idea, skills, or expertise. Together, we build something
-            successful.
-          </h1>
-        </div> -->
+            Book a Call →
+          </a>
+        </div>
       </div>
     </header>
 
     <!-- what is incomio -->
-    <section id="about" class="bg-black py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8">
-      <div class="max-w-7xl mx-auto flex items-center justify-center">
+    <section
+      id="about"
+      class="bg-black py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-center"
+        data-aos="zoom-in-up"
+      >
         <div
           class="bg-neutral-800 rounded-3xl p-8 sm:p-10 md:p-12 max-w-sm sm:max-w-md md:max-w-3xl w-full"
         >
@@ -217,9 +219,8 @@
             </p>
 
             <p>
-              Instead of charging you high upfront costs, we partner with you.
-              We share the work, the responsibility, the strategy, and the
-              success.
+              Instead of charging you high upfront costs, we partner with you. We
+              share the work, the responsibility, the strategy, and the success.
             </p>
 
             <p>
@@ -232,864 +233,1242 @@
       </div>
     </section>
 
-<!-- who we partner with  -->
-       <section class="bg-black py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 text-center">
-        Who We Partner With
-      </h2>
-      
-      <p class="text-neutral-300 text-lg sm:text-xl text-center mb-12 sm:mb-16 max-w-3xl mx-auto">
-        Our partnerships are flexible because every entrepreneur is different. We work with:
-      </p>
-      
-      <!-- Mobile: Horizontal Scrolling Carousel -->
-      <div class="md:hidden carousel-container flex gap-4 pb-4 mb-12">
-        <div class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center">
-          <div class="partner-icon mb-4">
-            <span class="text-white">💡</span>
-          </div>
-          <p class="text-neutral-200 text-base leading-relaxed">People with ideas but no execution plan</p>
-        </div>
-        
-        <div class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center">
-          <div class="partner-icon mb-4" style="animation-delay: 0.2s;">
-            <span class="text-white">🎯</span>
-          </div>
-          <p class="text-neutral-200 text-base leading-relaxed">Experts with skills but no monetization model</p>
-        </div>
-        
-        <div class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center">
-          <div class="partner-icon mb-4" style="animation-delay: 0.4s;">
-            <span class="text-white">📢</span>
-          </div>
-          <p class="text-neutral-200 text-base leading-relaxed">Influencers with audience but no product</p>
-        </div>
-        
-        <div class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center">
-          <div class="partner-icon mb-4" style="animation-delay: 0.6s;">
-            <span class="text-white">🚀</span>
-          </div>
-          <p class="text-neutral-200 text-base leading-relaxed">Creators and coaches ready to launch digital products</p>
-        </div>
-        
-        <div class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center">
-          <div class="partner-icon mb-4" style="animation-delay: 0.8s;">
-            <span class="text-white">📈</span>
-          </div>
-          <p class="text-neutral-200 text-base leading-relaxed">Entrepreneurs who want to scale or expand</p>
-        </div>
-        
-        <div class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center">
-          <div class="partner-icon mb-4" style="animation-delay: 1s;">
-            <span class="text-white">✨</span>
-          </div>
-          <p class="text-neutral-200 text-base leading-relaxed">Individuals with no idea yet — but ready to build something profitable</p>
-        </div>
-      </div>
-      
-      <!-- Desktop: Grid Layout -->
-      <div class="hidden md:grid grid-cols-2 gap-6 md:gap-8 mb-12 sm:mb-16">
-        <div class="partner-card rounded-2xl p-8 flex items-start gap-6">
-          <div class="partner-icon">
-            <span class="text-white">💡</span>
-          </div>
-          <div>
-            <p class="text-neutral-200 text-lg leading-relaxed">People with ideas but no execution plan</p>
-          </div>
-        </div>
-        
-        <div class="partner-card rounded-2xl p-8 flex items-start gap-6">
-          <div class="partner-icon" style="animation-delay: 0.2s;">
-            <span class="text-white">🎯</span>
-          </div>
-          <div>
-            <p class="text-neutral-200 text-lg leading-relaxed">Experts with skills but no monetization model</p>
-          </div>
-        </div>
-        
-        <div class="partner-card rounded-2xl p-8 flex items-start gap-6">
-          <div class="partner-icon" style="animation-delay: 0.4s;">
-            <span class="text-white">📢</span>
-          </div>
-          <div>
-            <p class="text-neutral-200 text-lg leading-relaxed">Influencers with audience but no product</p>
-          </div>
-        </div>
-        
-        <div class="partner-card rounded-2xl p-8 flex items-start gap-6">
-          <div class="partner-icon" style="animation-delay: 0.6s;">
-            <span class="text-white">🚀</span>
-          </div>
-          <div>
-            <p class="text-neutral-200 text-lg leading-relaxed">Creators and coaches ready to launch digital products</p>
-          </div>
-        </div>
-        
-        <div class="partner-card rounded-2xl p-8 flex items-start gap-6">
-          <div class="partner-icon" style="animation-delay: 0.8s;">
-            <span class="text-white">📈</span>
-          </div>
-          <div>
-            <p class="text-neutral-200 text-lg leading-relaxed">Entrepreneurs who want to scale or expand</p>
-          </div>
-        </div>
-        
-        <div class="partner-card rounded-2xl p-8 flex items-start gap-6">
-          <div class="partner-icon" style="animation-delay: 1s;">
-            <span class="text-white">✨</span>
-          </div>
-          <div>
-            <p class="text-neutral-200 text-lg leading-relaxed">Individuals with no idea yet — but ready to build something profitable</p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- CTA Card -->
-      <div class="cta-card rounded-3xl p-8 sm:p-10 md:p-12 text-center max-w-4xl mx-auto relative z-10">
-        <div class="relative z-10">
-          <p class="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium">
-            If you have the <span class="font-bold">drive</span>, <span class="font-bold">vision</span>, <span class="font-bold">expertise</span>, or <span class="font-bold">potential</span> — let's explore what we can build together.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <!-- what we buid  -->
-<section id="services" class="bg-black py-16 sm:py-20 md:py-28 px-4 sm:px-6 md:px-8">
-  <div class="max-w-7xl mx-auto">
-    <!-- Header -->
-    <div class="text-center mb-12 sm:mb-16 md:mb-20">
-      <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-        What We Build Together
-      </h2>
-      <p class="text-neutral-300 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-        We co-create and scale digital businesses across four core verticals:
-      </p>
-    </div>
-
-    <!-- Studios Grid -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20">
-      
-      <!-- Studio 1 -->
-      <a 
-        href="./digit.html" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block"
-      >
-        <div class="flex items-start gap-4 mb-6">
-          <div class="number-badge w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center flex-shrink-0 float-animation">
-            <span class="text-white text-xl sm:text-2xl font-bold">1</span>
-          </div>
-          <h3 class="text-white text-2xl sm:text-3xl font-bold group-hover:text-blue-400 transition-colors">
-            Digital Products Studio
-          </h3>
-        </div>
-        <p class="text-neutral-300 text-base sm:text-lg leading-relaxed mb-4">
-          Courses, coaching programs, digital trainings, memberships, templates & more.
-        </p>
-        <p class="text-neutral-400 text-base sm:text-lg leading-relaxed">
-          We help create, package, launch, and scale digital products that sell consistently.
-        </p>
-      </a>
-
-      <!-- Studio 2 -->
-      <a 
-        href="./app.html" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block" 
-        style="animation-delay: 0.5s;"
-      >
-        <div class="flex items-start gap-4 mb-6">
-          <div class="number-badge w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center flex-shrink-0 float-animation" style="animation-delay: 0.5s;">
-            <span class="text-white text-xl sm:text-2xl font-bold">2</span>
-          </div>
-          <h3 class="text-white text-2xl sm:text-3xl font-bold group-hover:text-blue-400 transition-colors">
-            App Studio
-          </h3>
-        </div>
-        <p class="text-neutral-300 text-base sm:text-lg leading-relaxed">
-          We partner with founders to build, market, launch, and grow apps that solve real problems — with a strong go-to-market and user acquisition strategy from day one.
-        </p>
-      </a>
-
-      <!-- Studio 3 -->
-      <a 
-        href="./blockchain.html" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block" 
-        style="animation-delay: 1s;"
-      >
-        <div class="flex items-start gap-4 mb-6">
-          <div class="number-badge w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center flex-shrink-0 float-animation" style="animation-delay: 1s;">
-            <span class="text-white text-xl sm:text-2xl font-bold">3</span>
-          </div>
-          <h3 class="text-white text-2xl sm:text-3xl font-bold group-hover:text-blue-400 transition-colors">
-            Blockchain Studio
-          </h3>
-        </div>
-        <p class="text-neutral-300 text-base sm:text-lg leading-relaxed">
-          From token launches to Web3 products, utilities, and blockchain-based businesses; we partner with visionaries looking to build trusted, valuable, and sustainable blockchain projects.
-        </p>
-      </a>
-
-      <!-- Studio 4 -->
-      <a 
-        href="./ecommerce.html"
-        target="_blank" 
-        rel="noopener noreferrer" 
-        class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block" 
-        style="animation-delay: 1.5s;"
-      >
-        <div class="flex items-start gap-4 mb-6">
-          <div class="number-badge w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center flex-shrink-0 float-animation" style="animation-delay: 1.5s;">
-            <span class="text-white text-xl sm:text-2xl font-bold">4</span>
-          </div>
-          <h3 class="text-white text-2xl sm:text-3xl font-bold group-hover:text-blue-400 transition-colors">
-            E-commerce Studio
-          </h3>
-        </div>
-        <p class="text-neutral-300 text-base sm:text-lg leading-relaxed mb-4">
-          Brand building, private labeling, store launches, and e-commerce growth systems.
-        </p>
-        <p class="text-neutral-400 text-base sm:text-lg leading-relaxed">
-          We help create products, build stores, and drive consistent sales.
-        </p>
-      </a>
-
-    </div>
-
-    <!-- CTA Button -->
-    <div class="text-center">
-      <a href="https://calendly.com/didiazubike/strategy-call" target="_blank" class="cta-button inline-block px-10 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 rounded-full text-white text-lg sm:text-xl md:text-2xl font-bold hover:scale-105 transition-transform">
-        Let's Build Together →
-      </a>
-      <p class="text-neutral-500 text-sm sm:text-base mt-6">
-        Schedule a free discovery call
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- how our partnership works -->
-    <section>
-      <section class="split-section bg-black py-16 sm:py-20 md:py-28 px-4 sm:px-6 md:px-8 overflow-hidden">
-    <div class="max-w-7xl mx-auto">
-      
-      <!-- Header -->
-      <div class="text-center mb-12 sm:mb-16 md:mb-20">
-        <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-          How Our Partnerships Work
+    <!-- who we partner with  -->
+    <section class="bg-black py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 text-center"
+          data-aos="fade-up"
+        >
+          Who We Partner With
         </h2>
-        <p class="text-neutral-300 text-xl sm:text-2xl md:text-3xl">
-          We keep it simple:
+
+        <p
+          class="text-neutral-300 text-lg sm:text-xl text-center mb-12 sm:mb-16 max-w-3xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Our partnerships are flexible because every entrepreneur is different.
+          We work with:
         </p>
-      </div>
 
-      <!-- Split Content -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-8 mb-12 sm:mb-16 md:mb-20">
-        
-        <!-- Left Side - What We Don't Do -->
-        <div class="split-bg-left p-8 sm:p-10 md:p-12 lg:rounded-3xl slide-in-left">
-          <div class="space-y-6 sm:space-y-8">
-            <div class="flex items-start gap-4 group">
-              <div class="cross-icon">
-                <span class="text-white text-lg font-bold">✕</span>
-              </div>
-              <p class="text-neutral-300 text-lg sm:text-xl md:text-2xl leading-relaxed group-hover:text-white transition-colors">
-                No overwhelming consulting fees
+        <!-- Mobile: Horizontal Scrolling Carousel -->
+        <div
+          class="md:hidden carousel-container flex gap-4 pb-4 mb-12"
+          data-aos="fade-right"
+        >
+          <div
+            class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center"
+          >
+            <div class="partner-icon mb-4">
+              <span class="text-white">💡</span>
+            </div>
+            <p class="text-neutral-200 text-base leading-relaxed">
+              People with ideas but no execution plan
+            </p>
+          </div>
+
+          <div
+            class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center"
+          >
+            <div class="partner-icon mb-4" style="animation-delay: 0.2s">
+              <span class="text-white">🎯</span>
+            </div>
+            <p class="text-neutral-200 text-base leading-relaxed">
+              Experts with skills but no monetization model
+            </p>
+          </div>
+
+          <div
+            class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center"
+          >
+            <div class="partner-icon mb-4" style="animation-delay: 0.4s">
+              <span class="text-white">📢</span>
+            </div>
+            <p class="text-neutral-200 text-base leading-relaxed">
+              Influencers with audience but no product
+            </p>
+          </div>
+
+          <div
+            class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center"
+          >
+            <div class="partner-icon mb-4" style="animation-delay: 0.6s">
+              <span class="text-white">🚀</span>
+            </div>
+            <p class="text-neutral-200 text-base leading-relaxed">
+              Creators and coaches ready to launch digital products
+            </p>
+          </div>
+
+          <div
+            class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center"
+          >
+            <div class="partner-icon mb-4" style="animation-delay: 0.8s">
+              <span class="text-white">📈</span>
+            </div>
+            <p class="text-neutral-200 text-base leading-relaxed">
+              Entrepreneurs who want to scale or expand
+            </p>
+          </div>
+
+          <div
+            class="carousel-item partner-card rounded-2xl p-8 flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center text-center"
+          >
+            <div class="partner-icon mb-4" style="animation-delay: 1s">
+              <span class="text-white">✨</span>
+            </div>
+            <p class="text-neutral-200 text-base leading-relaxed">
+              Individuals with no idea yet — but ready to build something
+              profitable
+            </p>
+          </div>
+        </div>
+
+        <!-- Desktop: Grid Layout -->
+        <div class="hidden md:grid grid-cols-2 gap-6 md:gap-8 mb-12 sm:mb-16">
+          <div
+            class="partner-card rounded-2xl p-8 flex items-start gap-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="partner-icon">
+              <span class="text-white">💡</span>
+            </div>
+            <div>
+              <p class="text-neutral-200 text-lg leading-relaxed">
+                People with ideas but no execution plan
               </p>
             </div>
-            
-            <div class="flex items-start gap-4 group">
-              <div class="cross-icon">
-                <span class="text-white text-lg font-bold">✕</span>
-              </div>
-              <p class="text-neutral-300 text-lg sm:text-xl md:text-2xl leading-relaxed group-hover:text-white transition-colors">
-                No "pay us, then we advise you" model
+          </div>
+
+          <div
+            class="partner-card rounded-2xl p-8 flex items-start gap-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="partner-icon" style="animation-delay: 0.2s">
+              <span class="text-white">🎯</span>
+            </div>
+            <div>
+              <p class="text-neutral-200 text-lg leading-relaxed">
+                Experts with skills but no monetization model
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="partner-card rounded-2xl p-8 flex items-start gap-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="partner-icon" style="animation-delay: 0.4s">
+              <span class="text-white">📢</span>
+            </div>
+            <div>
+              <p class="text-neutral-200 text-lg leading-relaxed">
+                Influencers with audience but no product
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="partner-card rounded-2xl p-8 flex items-start gap-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="partner-icon" style="animation-delay: 0.6s">
+              <span class="text-white">🚀</span>
+            </div>
+            <div>
+              <p class="text-neutral-200 text-lg leading-relaxed">
+                Creators and coaches ready to launch digital products
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="partner-card rounded-2xl p-8 flex items-start gap-6"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="partner-icon" style="animation-delay: 0.8s">
+              <span class="text-white">📈</span>
+            </div>
+            <div>
+              <p class="text-neutral-200 text-lg leading-relaxed">
+                Entrepreneurs who want to scale or expand
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="partner-card rounded-2xl p-8 flex items-start gap-6"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="partner-icon" style="animation-delay: 1s">
+              <span class="text-white">✨</span>
+            </div>
+            <div>
+              <p class="text-neutral-200 text-lg leading-relaxed">
+                Individuals with no idea yet — but ready to build something
+                profitable
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Right Side - What We Do -->
-        <div class="split-bg-right p-8 sm:p-10 md:p-12 lg:rounded-3xl slide-in-right mt-8 lg:mt-0">
-          <div class="space-y-6 sm:space-y-8">
-            <div class="flex items-start gap-4 group">
-              <div class="check-icon pulse-ring">
-                <span class="text-white text-lg font-bold">✓</span>
-              </div>
-              <p class="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium">
-                We co-build with you
-              </p>
-            </div>
-            
-            <div class="flex items-start gap-4 group">
-              <div class="check-icon pulse-ring" style="animation-delay: 0.3s;">
-                <span class="text-white text-lg font-bold">✓</span>
-              </div>
-              <p class="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium">
-                We share the success with you
-              </p>
-            </div>
-
-            <div class="flex items-start gap-4 group">
-              <div class="check-icon pulse-ring" style="animation-delay: 0.6s;">
-                <span class="text-white text-lg font-bold">✓</span>
-              </div>
-              <p class="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium">
-                We grow as you grow
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Bottom Content -->
-      <div class="text-center space-y-8 sm:space-y-10 md:space-y-12">
-        <div class="max-w-4xl mx-auto">
-          <p class="text-neutral-300 text-lg sm:text-xl md:text-2xl leading-relaxed mb-4">
-            Every partnership is tailored. The model depends on the project, the stage, and what each side contributes.
-          </p>
-          <p class="text-neutral-300 text-lg sm:text-xl md:text-2xl leading-relaxed">
-            What stays constant is this:
-          </p>
-        </div>
-
-        <!-- Winning Statement Card -->
-        <div class="winning-card rounded-3xl p-10 sm:p-12 md:p-16 max-w-3xl mx-auto relative">
+        <!-- CTA Card -->
+        <div
+          class="cta-card rounded-3xl p-8 sm:p-10 md:p-12 text-center max-w-4xl mx-auto relative z-10"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <div class="relative z-10">
-            <p class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              We only win when you win.
+            <p
+              class="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium"
+            >
+              If you have the <span class="font-bold">drive</span>,
+              <span class="font-bold">vision</span>,
+              <span class="font-bold">expertise</span>, or
+              <span class="font-bold">potential</span> — let's explore what we
+              can build together.
             </p>
           </div>
         </div>
       </div>
-
-    </div>
-  </section>
     </section>
 
-<!-- who brings what ? -->
-<section class="bg-black py-16 sm:py-20 md:py-28 px-4 sm:px-6 md:px-8 relative overflow-hidden">
-    <div class="dot-pattern"></div>
-    <div class="max-w-7xl mx-auto relative z-10">
-      
-      <!-- Header -->
-      <div class="text-center mb-16 sm:mb-20 md:mb-24">
-        <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold">
-          What You Bring <span class="text-neutral-500">vs</span> What We Bring
-        </h2>
-      </div>
-
-      <!-- Main Comparison Grid -->
-      <div class="comparison-container mb-16 sm:mb-20">
-        
-        <!-- Desktop: Side by Side Layout -->
-        <div class="hidden lg:grid lg:grid-cols-2 lg:gap-12 items-start">
-          
-          <!-- You Bring Column -->
-          <div>
-            <div class="text-center mb-8">
-              <h3 class="text-white text-3xl lg:text-4xl font-bold inline-block px-8 py-3 bg-neutral-800 rounded-full">
-                You Bring
-              </h3>
-            </div>
-            
-            <div class="space-y-5">
-              <div class="item-row you-side rounded-2xl p-8 hover:scale-105 transition-transform">
-                <p class="text-neutral-200 text-lg lg:text-xl leading-relaxed">
-                  Your idea, expertise, skills, or potential
-                </p>
-              </div>
-              
-              <div class="item-row you-side rounded-2xl p-8 hover:scale-105 transition-transform">
-                <p class="text-neutral-200 text-lg lg:text-xl leading-relaxed">
-                  Your commitment to build and grow
-                </p>
-              </div>
-              
-              <div class="item-row you-side rounded-2xl p-8 hover:scale-105 transition-transform">
-                <p class="text-neutral-200 text-lg lg:text-xl leading-relaxed">
-                  Your voice, knowledge, or spark
-                </p>
-              </div>
-              
-              <div class="item-row you-side rounded-2xl p-8 hover:scale-105 transition-transform">
-                <p class="text-neutral-200 text-lg lg:text-xl leading-relaxed">
-                  Your time and willingness to collaborate
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- We Bring Column -->
-          <div>
-            <div class="text-center mb-8">
-              <h3 class="text-white text-3xl lg:text-4xl font-bold inline-block px-8 py-3 rounded-full blue-gradient">
-                We Bring
-              </h3>
-            </div>
-            
-            <div class="space-y-5">
-              <div class="item-row we-side rounded-2xl p-8 hover:scale-105 transition-transform">
-                <p class="text-white text-lg lg:text-xl leading-relaxed font-medium">
-                  Strategy, business model, and monetization systems
-                </p>
-              </div>
-              
-              <div class="item-row we-side rounded-2xl p-8 hover:scale-105 transition-transform">
-                <p class="text-white text-lg lg:text-xl leading-relaxed font-medium">
-                  Execution team, creative development & operations
-                </p>
-              </div>
-              
-              <div class="item-row we-side rounded-2xl p-8 hover:scale-105 transition-transform">
-                <p class="text-white text-lg lg:text-xl leading-relaxed font-medium">
-                  Marketing, launch, and growth engine
-                </p>
-              </div>
-              
-              <div class="item-row we-side rounded-2xl p-8 hover:scale-105 transition-transform">
-                <p class="text-white text-lg lg:text-xl leading-relaxed font-medium">
-                  Tech, systems, playbooks, and scaling frameworks
-                </p>
-              </div>
-            </div>
-          </div>
-
+    <!-- what we build  -->
+    <section
+      id="services"
+      class="bg-black py-16 sm:py-20 md:py-28 px-4 sm:px-6 md:px-8"
+    >
+      <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div
+          class="text-center mb-12 sm:mb-16 md:mb-20"
+          data-aos="fade-up"
+        >
+          <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+            What We Build Together
+          </h2>
+          <p
+            class="text-neutral-300 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed"
+          >
+            We co-create and scale digital businesses across four core verticals:
+          </p>
         </div>
 
-        <!-- Mobile: Stacked Layout -->
-        <div class="lg:hidden">
-          <!-- You Bring Section -->
-          <div class="mb-8">
-            <div class="text-center mb-6">
-              <h3 class="text-white text-2xl sm:text-3xl font-bold inline-block px-6 py-2 bg-neutral-800 rounded-full">
-                You Bring
+        <!-- Studios Grid -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20"
+        >
+          <!-- Studio 1 -->
+          <a
+            href="./digit.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-start gap-4 mb-6">
+              <div
+                class="number-badge w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center flex-shrink-0 float-animation"
+              >
+                <span class="text-white text-xl sm:text-2xl font-bold">1</span>
+              </div>
+              <h3
+                class="text-white text-2xl sm:text-3xl font-bold group-hover:text-blue-400 transition-colors"
+              >
+                Digital Products Studio
               </h3>
             </div>
-            
-            <div class="space-y-4">
-              <div class="item-row you-side rounded-2xl p-5 sm:p-6">
-                <p class="text-neutral-200 text-base sm:text-lg leading-relaxed">
-                  Your idea, expertise, skills, or potential
-                </p>
-              </div>
-              
-              <div class="item-row you-side rounded-2xl p-5 sm:p-6">
-                <p class="text-neutral-200 text-base sm:text-lg leading-relaxed">
-                  Your commitment to build and grow
-                </p>
-              </div>
-              
-              <div class="item-row you-side rounded-2xl p-5 sm:p-6">
-                <p class="text-neutral-200 text-base sm:text-lg leading-relaxed">
-                  Your voice, knowledge, or spark
-                </p>
-              </div>
-              
-              <div class="item-row you-side rounded-2xl p-5 sm:p-6">
-                <p class="text-neutral-200 text-base sm:text-lg leading-relaxed">
-                  Your time and willingness to collaborate
-                </p>
-              </div>
-            </div>
-          </div>
+            <p class="text-neutral-300 text-base sm:text-lg leading-relaxed mb-4">
+              Courses, coaching programs, digital trainings, memberships,
+              templates & more.
+            </p>
+            <p class="text-neutral-400 text-base sm:text-lg leading-relaxed">
+              We help create, package, launch, and scale digital products that
+              sell consistently.
+            </p>
+          </a>
 
-          <!-- Plus Connector -->
-          <div class="flex items-center justify-center my-8">
-            <div class="plus-connector">+</div>
-          </div>
-
-          <!-- We Bring Section -->
-          <div>
-            <div class="text-center mb-6">
-              <h3 class="text-white text-2xl sm:text-3xl font-bold inline-block px-6 py-2 rounded-full blue-gradient">
-                We Bring
+          <!-- Studio 2 -->
+          <a
+            href="./app.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block"
+            style="animation-delay: 0.5s"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-start gap-4 mb-6">
+              <div
+                class="number-badge w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center flex-shrink-0 float-animation"
+                style="animation-delay: 0.5s"
+              >
+                <span class="text-white text-xl sm:text-2xl font-bold">2</span>
+              </div>
+              <h3
+                class="text-white text-2xl sm:text-3xl font-bold group-hover:text-blue-400 transition-colors"
+              >
+                App Studio
               </h3>
             </div>
-            
-            <div class="space-y-4">
-              <div class="item-row we-side rounded-2xl p-5 sm:p-6">
-                <p class="text-white text-base sm:text-lg leading-relaxed font-medium">
-                  Strategy, business model, and monetization systems
-                </p>
+            <p class="text-neutral-300 text-base sm:text-lg leading-relaxed">
+              We partner with founders to build, market, launch, and grow apps
+              that solve real problems — with a strong go-to-market and user
+              acquisition strategy from day one.
+            </p>
+          </a>
+
+          <!-- Studio 3 -->
+          <a
+            href="./blockchain.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block"
+            style="animation-delay: 1s"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex items-start gap-4 mb-6">
+              <div
+                class="number-badge w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center flex-shrink-0 float-animation"
+                style="animation-delay: 1s"
+              >
+                <span class="text-white text-xl sm:text-2xl font-bold">3</span>
               </div>
-              
-              <div class="item-row we-side rounded-2xl p-5 sm:p-6">
-                <p class="text-white text-base sm:text-lg leading-relaxed font-medium">
-                  Execution team, creative development & operations
-                </p>
-              </div>
-              
-              <div class="item-row we-side rounded-2xl p-5 sm:p-6">
-                <p class="text-white text-base sm:text-lg leading-relaxed font-medium">
-                  Marketing, launch, and growth engine
-                </p>
-              </div>
-              
-              <div class="item-row we-side rounded-2xl p-5 sm:p-6">
-                <p class="text-white text-base sm:text-lg leading-relaxed font-medium">
-                  Tech, systems, playbooks, and scaling frameworks
-                </p>
-              </div>
+              <h3
+                class="text-white text-2xl sm:text-3xl font-bold group-hover:text-blue-400 transition-colors"
+              >
+                Blockchain Studio
+              </h3>
             </div>
-          </div>
+            <p class="text-neutral-300 text-base sm:text-lg leading-relaxed">
+              From token launches to Web3 products, utilities, and
+              blockchain-based businesses; we partner with visionaries looking to
+              build trusted, valuable, and sustainable blockchain projects.
+            </p>
+          </a>
+
+          <!-- Studio 4 -->
+          <a
+            href="./ecommerce.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block"
+            style="animation-delay: 1.5s"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="flex items-start gap-4 mb-6">
+              <div
+                class="number-badge w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center flex-shrink-0 float-animation"
+                style="animation-delay: 1.5s"
+              >
+                <span class="text-white text-xl sm:text-2xl font-bold">4</span>
+              </div>
+              <h3
+                class="text-white text-2xl sm:text-3xl font-bold group-hover:text-blue-400 transition-colors"
+              >
+                E-commerce Studio
+              </h3>
+            </div>
+            <p class="text-neutral-300 text-base sm:text-lg leading-relaxed mb-4">
+              Brand building, private labeling, store launches, and e-commerce
+              growth systems.
+            </p>
+            <p class="text-neutral-400 text-base sm:text-lg leading-relaxed">
+              We help create products, build stores, and drive consistent sales.
+            </p>
+          </a>
         </div>
 
-      </div>
-
-      <!-- Equals Sign -->
-      <div class="my-12 sm:my-16">
-        <div class="equals-connector"></div>
-      </div>
-
-      <!-- Result Card -->
-      <div class="result-card rounded-3xl p-10 sm:p-12 md:p-16 lg:p-20 text-center relative max-w-5xl mx-auto" style="animation: slideUp 0.6s ease-out 0.8s backwards;">
-        <div class="relative z-10">
-          <p class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight drop-shadow-lg">
-            Together, we combine strengths to create a profitable business.
+        <!-- CTA Button -->
+        <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+          <a
+            href="https://calendly.com/didiazubike/strategy-call"
+            target="_blank"
+            class="cta-button inline-block px-10 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 rounded-full text-white text-lg sm:text-xl md:text-2xl font-bold hover:scale-105 transition-transform"
+          >
+            Let's Build Together →
+          </a>
+          <p class="text-neutral-500 text-sm sm:text-base mt-6">
+            Schedule a free discovery call
           </p>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- how our partnership works -->
+    <section
+      class="split-section bg-black py-16 sm:py-20 md:py-28 px-4 sm:px-6 md:px-8 overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div
+          class="text-center mb-12 sm:mb-16 md:mb-20"
+          data-aos="fade-up"
+        >
+          <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+            How Our Partnerships Work
+          </h2>
+          <p class="text-neutral-300 text-xl sm:text-2xl md:text-3xl">
+            We keep it simple:
+          </p>
+        </div>
 
-<!-- our process section  -->
-  <section id="OurProcess" class="bg-black py-16 sm:py-20 md:py-28 px-5 sm:px-6 md:px-8">
-    <div class="max-w-6xl mx-auto">
-      
-      <!-- Header -->
-      <div class="text-center mb-12 sm:mb-16 md:mb-20">
-        <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-          Our Process
-        </h2>
-        <p class="text-neutral-300 text-xl sm:text-2xl md:text-3xl">
-          A smooth and collaborative journey:
-        </p>
+        <!-- Split Content -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-8 mb-12 sm:mb-16 md:mb-20"
+        >
+          <!-- Left Side - What We Don't Do -->
+          <div
+            class="split-bg-left p-8 sm:p-10 md:p-12 lg:rounded-3xl slide-in-left"
+            data-aos="fade-right"
+          >
+            <div class="space-y-6 sm:space-y-8">
+              <div class="flex items-start gap-4 group">
+                <div class="cross-icon">
+                  <span class="text-white text-lg font-bold">✕</span>
+                </div>
+                <p
+                  class="text-neutral-300 text-lg sm:text-xl md:text-2xl leading-relaxed group-hover:text-white transition-colors"
+                >
+                  No overwhelming consulting fees
+                </p>
+              </div>
+
+              <div class="flex items-start gap-4 group">
+                <div class="cross-icon">
+                  <span class="text-white text-lg font-bold">✕</span>
+                </div>
+                <p
+                  class="text-neutral-300 text-lg sm:text-xl md:text-2xl leading-relaxed group-hover:text-white transition-colors"
+                >
+                  No "pay us, then we advise you" model
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side - What We Do -->
+          <div
+            class="split-bg-right p-8 sm:p-10 md:p-12 lg:rounded-3xl slide-in-right mt-8 lg:mt-0"
+            data-aos="fade-left"
+          >
+            <div class="space-y-6 sm:space-y-8">
+              <div class="flex items-start gap-4 group">
+                <div class="check-icon pulse-ring">
+                  <span class="text-white text-lg font-bold">✓</span>
+                </div>
+                <p
+                  class="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium"
+                >
+                  We co-build with you
+                </p>
+              </div>
+
+              <div class="flex items-start gap-4 group">
+                <div
+                  class="check-icon pulse-ring"
+                  style="animation-delay: 0.3s"
+                >
+                  <span class="text-white text-lg font-bold">✓</span>
+                </div>
+                <p
+                  class="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium"
+                >
+                  We share the success with you
+                </p>
+              </div>
+
+              <div class="flex items-start gap-4 group">
+                <div
+                  class="check-icon pulse-ring"
+                  style="animation-delay: 0.6s"
+                >
+                  <span class="text-white text-lg font-bold">✓</span>
+                </div>
+                <p
+                  class="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium"
+                >
+                  We grow as you grow
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Content -->
+        <div
+          class="text-center space-y-8 sm:space-y-10 md:space-y-12"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="max-w-4xl mx-auto">
+            <p
+              class="text-neutral-300 text-lg sm:text-xl md:text-2xl leading-relaxed mb-4"
+            >
+              Every partnership is tailored. The model depends on the project,
+              the stage, and what each side contributes.
+            </p>
+            <p
+              class="text-neutral-300 text-lg sm:text-xl md:text-2xl leading-relaxed"
+            >
+              What stays constant is this:
+            </p>
+          </div>
+
+          <!-- Winning Statement Card -->
+          <div
+            class="winning-card rounded-3xl p-10 sm:p-12 md:p-16 max-w-3xl mx-auto relative"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="relative z-10">
+              <p
+                class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+              >
+                We only win when you win.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Timeline -->
-      <div class="timeline-container relative">
-        <div class="timeline-line hidden lg:block"></div>
-        <div class="timeline-line lg:hidden"></div>
-        
-        <div class="space-y-12 lg:space-y-16">
-          
-          <!-- Step 1 -->
-          <div class="process-step flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12">
-            <div class="flex items-center lg:items-center gap-6 lg:flex-1 lg:justify-end w-full lg:w-auto">
-              <div class="step-number flex-shrink-0">1</div>
-              <div class="lg:hidden flex-1">
-                <div class="step-card rounded-2xl p-6 sm:p-8">
-                  <h3 class="text-white text-2xl sm:text-3xl font-bold mb-4">
+    <!-- who brings what ? -->
+    <section
+      class="bg-black py-16 sm:py-20 md:py-28 px-4 sm:px-6 md:px-8 relative overflow-hidden"
+    >
+      <div class="dot-pattern"></div>
+      <div class="max-w-7xl mx-auto relative z-10">
+        <!-- Header -->
+        <div
+          class="text-center mb-16 sm:mb-20 md:mb-24"
+          data-aos="fade-up"
+        >
+          <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold">
+            What You Bring
+            <span class="text-neutral-500">vs</span> What We Bring
+          </h2>
+        </div>
+
+        <!-- Main Comparison Grid -->
+        <div class="comparison-container mb-16 sm:mb-20">
+          <!-- Desktop: Side by Side Layout -->
+          <div class="hidden lg:grid lg:grid-cols-2 lg:gap-12 items-start">
+            <!-- You Bring Column -->
+            <div data-aos="fade-right" data-aos-duration="600">
+              <div class="text-center mb-8">
+                <h3
+                  class="text-white text-3xl lg:text-4xl font-bold inline-block px-8 py-3 bg-neutral-800 rounded-full"
+                >
+                  You Bring
+                </h3>
+              </div>
+
+              <div class="space-y-5">
+                <div
+                  class="item-row you-side rounded-2xl p-8 hover:scale-105 transition-transform"
+                >
+                  <p class="text-neutral-200 text-lg lg:text-xl leading-relaxed">
+                    Your idea, expertise, skills, or potential
+                  </p>
+                </div>
+
+                <div
+                  class="item-row you-side rounded-2xl p-8 hover:scale-105 transition-transform"
+                >
+                  <p class="text-neutral-200 text-lg lg:text-xl leading-relaxed">
+                    Your commitment to build and grow
+                  </p>
+                </div>
+
+                <div
+                  class="item-row you-side rounded-2xl p-8 hover:scale-105 transition-transform"
+                >
+                  <p class="text-neutral-200 text-lg lg:text-xl leading-relaxed">
+                    Your voice, knowledge, or spark
+                  </p>
+                </div>
+
+                <div
+                  class="item-row you-side rounded-2xl p-8 hover:scale-105 transition-transform"
+                >
+                  <p class="text-neutral-200 text-lg lg:text-xl leading-relaxed">
+                    Your time and willingness to collaborate
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- We Bring Column -->
+            <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+              <div class="text-center mb-8">
+                <h3
+                  class="text-white text-3xl lg:text-4xl font-bold inline-block px-8 py-3 rounded-full blue-gradient"
+                >
+                  We Bring
+                </h3>
+              </div>
+
+              <div class="space-y-5">
+                <div
+                  class="item-row we-side rounded-2xl p-8 hover:scale-105 transition-transform"
+                >
+                  <p
+                    class="text-white text-lg lg:text-xl leading-relaxed font-medium"
+                  >
+                    Strategy, business model, and monetization systems
+                  </p>
+                </div>
+
+                <div
+                  class="item-row we-side rounded-2xl p-8 hover:scale-105 transition-transform"
+                >
+                  <p
+                    class="text-white text-lg lg:text-xl leading-relaxed font-medium"
+                  >
+                    Execution team, creative development & operations
+                  </p>
+                </div>
+
+                <div
+                  class="item-row we-side rounded-2xl p-8 hover:scale-105 transition-transform"
+                >
+                  <p
+                    class="text-white text-lg lg:text-xl leading-relaxed font-medium"
+                  >
+                    Marketing, launch, and growth engine
+                  </p>
+                </div>
+
+                <div
+                  class="item-row we-side rounded-2xl p-8 hover:scale-1DELETED-transform"
+                >
+                  <p
+                    class="text-white text-lg lg:text-xl leading-relaxed font-medium"
+                  >
+                    Tech, systems, playbooks, and scaling frameworks
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile: Stacked Layout -->
+          <div class="lg:hidden">
+            <!-- You Bring Section -->
+            <div class="mb-8" data-aos="fade-up">
+              <div class="text-center mb-6">
+                <h3
+                  class="text-white text-2xl sm:text-3xl font-bold inline-block px-6 py-2 bg-neutral-800 rounded-full"
+                >
+                  You Bring
+                </h3>
+              </div>
+
+              <div class="space-y-4">
+                <div class="item-row you-side rounded-2xl p-5 sm:p-6">
+                  <p class="text-neutral-200 text-base sm:text-lg leading-relaxed">
+                    Your idea, expertise, skills, or potential
+                  </p>
+                </div>
+
+                <div class="item-row you-side rounded-2xl p-5 sm:p-6">
+                  <p class="text-neutral-200 text-base sm:text-lg leading-relaxed">
+                    Your commitment to build and grow
+                  </p>
+                </div>
+
+                <div class="item-row you-side rounded-2xl p-5 sm:p-6">
+                  <p class="text-neutral-200 text-base sm:text-lg leading-relaxed">
+                    Your voice, knowledge, or spark
+                  </p>
+                </div>
+
+                <div class="item-row you-side rounded-2xl p-5 sm:p-6">
+                  <p class="text-neutral-200 text-base sm:text-lg leading-relaxed">
+                    Your time and willingness to collaborate
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plus Connector -->
+            <div class="flex items-center justify-center my-8" data-aos="zoom-in">
+              <div class="plus-connector">+</div>
+            </div>
+
+            <!-- We Bring Section -->
+            <div data-aos="fade-up">
+              <div class="text-center mb-6">
+                <h3
+                  class="text-white text-2xl sm:text-3xl font-bold inline-block px-6 py-2 rounded-full blue-gradient"
+                >
+                  We Bring
+                </h3>
+              </div>
+
+              <div class="space-y-4">
+                <div class="item-row we-side rounded-2xl p-5 sm:p-6">
+                  <p
+                    class="text-white text-base sm:text-lg leading-relaxed font-medium"
+                  >
+                    Strategy, business model, and monetization systems
+                  </p>
+                </div>
+
+                <div class="item-row we-side rounded-2xl p-5 sm:p-6">
+                  <p
+                    class="text-white text-base sm:text-lg leading-relaxed font-medium"
+                  >
+                    Execution team, creative development & operations
+                  </p>
+                </div>
+
+                <div class="item-row we-side rounded-2xl p-5 sm:p-6">
+                  <p
+                    class="text-white text-base sm:text-lg leading-relaxed font-medium"
+                  >
+                    Marketing, launch, and growth engine
+                  </p>
+                </div>
+
+                <div class="item-row we-side rounded-2xl p-5 sm:p-6">
+                  <p
+                    class="text-white text-base sm:text-lg leading-relaxed font-medium"
+                  >
+                    Tech, systems, playbooks, and scaling frameworks
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equals Sign -->
+        <div class="my-12 sm:my-16" data-aos="zoom-in" data-aos-delay="200">
+          <div class="equals-connector"></div>
+        </div>
+
+        <!-- Result Card -->
+        <div
+          class="result-card rounded-3xl p-10 sm:p-12 md:p-16 lg:p-20 text-center relative max-w-5xl mx-auto"
+          style="animation: slideUp 0.6s ease-out 0.8s backwards"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="relative z-10">
+            <p
+              class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight drop-shadow-lg"
+            >
+              Together, we combine strengths to create a profitable business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our process section  -->
+    <section
+      id="OurProcess"
+      class="bg-black py-16 sm:py-20 md:py-28 px-5 sm:px-6 md:px-8"
+    >
+      <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div
+          class="text-center mb-12 sm:mb-16 md:mb-20"
+          data-aos="fade-up"
+        >
+          <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+            Our Process
+          </h2>
+          <p class="text-neutral-300 text-xl sm:text-2xl md:text-3xl">
+            A smooth and collaborative journey:
+          </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-container relative">
+          <div class="timeline-line hidden lg:block"></div>
+          <div class="timeline-line lg:hidden"></div>
+
+          <div class="space-y-12 lg:space-y-16">
+            <!-- Step 1 -->
+            <div
+              class="process-step flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12"
+              data-aos="fade-up"
+            >
+              <div
+                class="flex items-center lg:items-center gap-6 lg:flex-1 lg:justify-end w-full lg:w-auto"
+              >
+                <div class="step-number flex-shrink-0">1</div>
+                <div class="lg:hidden flex-1">
+                  <div class="step-card rounded-2xl p-6 sm:p-8">
+                    <h3 class="text-white text-2xl sm:text-3xl font-bold mb-4">
+                      Alignment & Strategy
+                      <span class="arrow-icon">→</span>
+                    </h3>
+                    <p
+                      class="text-neutral-300 text-base sm:text-lg leading-relaxed"
+                    >
+                      We discuss your vision, strengths, and goals, then map the
+                      smartest business model to build.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden lg:block lg:flex-1">
+                <div class="step-card rounded-2xl p-8 lg:p-10">
+                  <h3 class="text-white text-3xl lg:text-4xl font-bold mb-4">
                     Alignment & Strategy
                     <span class="arrow-icon">→</span>
                   </h3>
-                  <p class="text-neutral-300 text-base sm:text-lg leading-relaxed">
-                    We discuss your vision, strengths, and goals, then map the smartest business model to build.
+                  <p class="text-neutral-300 text-lg lg:text-xl leading-relaxed">
+                    We discuss your vision, strengths, and goals, then map the
+                    smartest business model to build.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="hidden lg:block lg:flex-1">
-              <div class="step-card rounded-2xl p-8 lg:p-10">
-                <h3 class="text-white text-3xl lg:text-4xl font-bold mb-4">
-                  Alignment & Strategy
-                  <span class="arrow-icon">→</span>
-                </h3>
-                <p class="text-neutral-300 text-lg lg:text-xl leading-relaxed">
-                  We discuss your vision, strengths, and goals, then map the smartest business model to build.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <!-- Step 2 -->
-          <div class="process-step flex flex-col lg:flex-row-reverse items-start lg:items-center gap-6 lg:gap-12">
-            <div class="flex items-center lg:items-center gap-6 lg:flex-1 w-full lg:w-auto">
-              <div class="step-number flex-shrink-0">2</div>
-              <div class="lg:hidden flex-1">
-                <div class="step-card rounded-2xl p-6 sm:p-8">
-                  <h3 class="text-white text-2xl sm:text-3xl font-bold mb-4">
+            <!-- Step 2 -->
+            <div
+              class="process-step flex flex-col lg:flex-row-reverse items-start lg:items-center gap-6 lg:gap-12"
+              data-aos="fade-up"
+            >
+              <div
+                class="flex items-center lg:items-center gap-6 lg:flex-1 w-full lg:w-auto"
+              >
+                <div class="step-number flex-shrink-0">2</div>
+                <div class="lg:hidden flex-1">
+                  <div class="step-card rounded-2xl p-6 sm:p-8">
+                    <h3 class="text-white text-2xl sm:text-3xl font-bold mb-4">
+                      Build & Launch
+                      <span class="arrow-icon">→</span>
+                    </h3>
+                    <p
+                      class="text-neutral-300 text-base sm:text-lg leading-relaxed"
+                    >
+                      We co-create the product, offer, brand, app, or store, and
+                      launch it to the market with proven frameworks.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden lg:block lg:flex-1">
+                <div class="step-card rounded-2xl p-8 lg:p-10">
+                  <h3 class="text-white text-3xl lg:text-4xl font-bold mb-4">
                     Build & Launch
                     <span class="arrow-icon">→</span>
                   </h3>
-                  <p class="text-neutral-300 text-base sm:text-lg leading-relaxed">
-                    We co-create the product, offer, brand, app, or store, and launch it to the market with proven frameworks.
+                  <p class="text-neutral-300 text-lg lg:text-xl leading-relaxed">
+                    We co-create the product, offer, brand, app, or store, and
+                    launch it to the market with proven frameworks.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="hidden lg:block lg:flex-1">
-              <div class="step-card rounded-2xl p-8 lg:p-10">
-                <h3 class="text-white text-3xl lg:text-4xl font-bold mb-4">
-                  Build & Launch
-                  <span class="arrow-icon">→</span>
-                </h3>
-                <p class="text-neutral-300 text-lg lg:text-xl leading-relaxed">
-                  We co-create the product, offer, brand, app, or store, and launch it to the market with proven frameworks.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <!-- Step 3 -->
-          <div class="process-step step-3 flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12">
-            <div class="flex items-center lg:items-center gap-6 lg:flex-1 lg:justify-end w-full lg:w-auto">
-              <div class="step-number flex-shrink-0">3</div>
-              <div class="lg:hidden flex-1">
-                <div class="step-card rounded-2xl p-6 sm:p-8">
-                  <h3 class="text-white text-2xl sm:text-3xl font-bold mb-4">
+            <!-- Step 3 -->
+            <div
+              class="process-step step-3 flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12"
+              data-aos="fade-up"
+            >
+              <div
+                class="flex items-center lg:items-center gap-6 lg:flex-1 lg:justify-end w-full lg:w-auto"
+              >
+                <div class="step-number flex-shrink-0">3</div>
+                <div class="lg:hidden flex-1">
+                  <div class="step-card rounded-2xl p-6 sm:p-8">
+                    <h3 class="text-white text-2xl sm:text-3xl font-bold mb-4">
+                      Growth & Scale
+                      <span class="arrow-icon">→</span>
+                    </h3>
+                    <p
+                      class="text-neutral-300 text-base sm:text-lg leading-relaxed"
+                    >
+                      We optimize, market, expand, improve systems, and scale
+                      revenue, side by side.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden lg:block lg:flex-1">
+                <div class="step-card rounded-2xl p-8 lg:p-10">
+                  <h3 class="text-white text-3xl lg:text-4xl font-bold mb-4">
                     Growth & Scale
                     <span class="arrow-icon">→</span>
                   </h3>
-                  <p class="text-neutral-300 text-base sm:text-lg leading-relaxed">
-                    We optimize, market, expand, improve systems, and scale revenue, side by side.
+                  <p class="text-neutral-300 text-lg lg:text-xl leading-relaxed">
+                    We optimize, market, expand, improve systems, and scale
+                    revenue, side by side.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="hidden lg:block lg:flex-1">
-              <div class="step-card rounded-2xl p-8 lg:p-10">
-                <h3 class="text-white text-3xl lg:text-4xl font-bold mb-4">
-                  Growth & Scale
-                  <span class="arrow-icon">→</span>
-                </h3>
-                <p class="text-neutral-300 text-lg lg:text-xl leading-relaxed">
-                  We optimize, market, expand, improve systems, and scale revenue, side by side.
-                </p>
-              </div>
-            </div>
           </div>
-
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- Why Incomio Section -->
-  <section id="whyIncomio" class="bg-black py-16 sm:py-20 md:py-28 px-4 sm:px-6 md:px-8">
-    <div class="max-w-6xl mx-auto">
-      
-      <!-- Header -->
-      <div class="text-center mb-12 sm:mb-16 md:mb-20">
-        <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-          Why Incomio
-        </h2>
-        <p class="text-neutral-300 text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed">
-          You don't just need ideas to be successful, you need execution, systems, guidance, and a partner who believes in your potential.
-        </p>
-      </div>
-
-      <!-- Subtitle -->
-      <div class="text-center mb-10 sm:mb-12">
-        <h3 class="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
-          Here's what makes Incomio different:
-        </h3>
-      </div>
-
-      <!-- Features Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20 md:mb-24">
-        
-        <div class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10">
-          <div class="flex items-start gap-4 mb-4">
-            <div class="star-icon">
-              <span class="text-white text-xl">⭐</span>
-            </div>
-            <h4 class="text-white text-xl sm:text-2xl font-bold">
-              Human + Strategic Partnership
-            </h4>
-          </div>
-          <p class="text-neutral-300 text-base sm:text-lg leading-relaxed pl-14">
-            You get the heart of a supportive partner and the mind of a business strategist.
+    <!-- Why Incomio Section -->
+    <section
+      id="whyIncomio"
+      class="bg-black py-16 sm:py-20 md:py-28 px-4 sm:px-6 md:px-8"
+    >
+      <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div
+          class="text-center mb-12 sm:mb-16 md:mb-20"
+          data-aos="fade-up"
+        >
+          <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+            Why Incomio
+          </h2>
+          <p
+            class="text-neutral-300 text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed"
+          >
+            You don't just need ideas to be successful, you need execution,
+            systems, guidance, and a partner who believes in your potential.
           </p>
         </div>
 
-        <div class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10">
-          <div class="flex items-start gap-4 mb-4">
-            <div class="star-icon" style="animation-delay: 0.3s;">
-              <span class="text-white text-xl">⭐</span>
-            </div>
-            <h4 class="text-white text-xl sm:text-2xl font-bold">
-              Ideas-to-Execution Advantage
-            </h4>
-          </div>
-          <p class="text-neutral-300 text-base sm:text-lg leading-relaxed pl-14">
-            Have no idea yet? We help reverse-engineer one that matches your strengths.
-          </p>
-        </div>
-
-        <div class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10">
-          <div class="flex items-start gap-4 mb-4">
-            <div class="star-icon" style="animation-delay: 0.6s;">
-              <span class="text-white text-xl">⭐</span>
-            </div>
-            <h4 class="text-white text-xl sm:text-2xl font-bold">
-              Launch & Growth Expertise
-            </h4>
-          </div>
-          <p class="text-neutral-300 text-base sm:text-lg leading-relaxed pl-14">
-            We don't just help you create, we help you sell, grow, and stay profitable.
-          </p>
-        </div>
-
-        <div class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10">
-          <div class="flex items-start gap-4 mb-4">
-            <div class="star-icon" style="animation-delay: 0.9s;">
-              <span class="text-white text-xl">⭐</span>
-            </div>
-            <h4 class="text-white text-xl sm:text-2xl font-bold">
-              Built on Shared Success
-            </h4>
-          </div>
-          <p class="text-neutral-300 text-base sm:text-lg leading-relaxed pl-14">
-            We grow with you, not at your expense.
-          </p>
-        </div>
-
-        <div class="fade-in feature-card rounded-2xl p-6 sm:p-8 md:col-span-2 relative z-10">
-          <div class="flex items-start gap-4 mb-4">
-            <div class="star-icon" style="animation-delay: 1.2s;">
-              <span class="text-white text-xl">⭐</span>
-            </div>
-            <h4 class="text-white text-xl sm:text-2xl font-bold">
-              Hands-On Execution
-            </h4>
-          </div>
-          <p class="text-neutral-300 text-base sm:text-lg leading-relaxed pl-14">
-            We don't just advise. We build, launch, market, and scale alongside you until the business succeeds.
-          </p>
-        </div>
-
-      </div>
-
-      <!-- Note Card -->
-      <div class="note-card rounded-3xl p-8 sm:p-10 md:p-12 lg:p-16 relative z-10">
-        <div class="relative z-10">
-          <h3 class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
-            A Note From Us to You
+        <!-- Subtitle -->
+        <div class="text-center mb-10 sm:mb-12" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
+            Here's what makes Incomio different:
           </h3>
-          <div class="space-y-4 text-white text-lg sm:text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto">
-            <p>
-              You don't have to build alone — and you don't need to have everything figured out.
+        </div>
+
+        <!-- Features Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20 md:mb-24"
+        >
+          <div
+            class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-start gap-4 mb-4">
+              <div class="star-icon">
+                <span class="text-white text-xl">⭐</span>
+              </div>
+              <h4 class="text-white text-xl sm:text-2xl font-bold">
+                Human + Strategic Partnership
+              </h4>
+            </div>
+            <p class="text-neutral-300 text-base sm:text-lg leading-relaxed pl-14">
+              You get the heart of a supportive partner and the mind of a
+              business strategist.
             </p>
-            <p>
-              Whether you're starting with a dream, an audience, a skill, or a clear concept, there's a path we can build together.
+          </div>
+
+          <div
+            class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex items-start gap-4 mb-4">
+              <div class="star-icon" style="animation-delay: 0.3s">
+                <span class="text-white text-xl">⭐</span>
+              </div>
+              <h4 class="text-white text-xl sm:text-2xl font-bold">
+                Ideas-to-Execution Advantage
+              </h4>
+            </div>
+            <p class="text-neutral-300 text-base sm:text-lg leading-relaxed pl-14">
+              Have no idea yet? We help reverse-engineer one that matches your
+              strengths.
             </p>
-            <p class="text-center font-bold text-xl sm:text-2xl md:text-3xl mt-8">
-              All it takes is the first conversation.
+          </div>
+
+          <div
+            class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="flex items-start gap-4 mb-4">
+              <div class="star-icon" style="animation-delay: 0.6s">
+                <span class="text-white text-xl">⭐</span>
+              </div>
+              <h4 class="text-white text-xl sm:text-2xl font-bold">
+                Launch & Growth Expertise
+              </h4>
+            </div>
+            <p class="text-neutral-300 text-base sm:text-lg leading-relaxed pl-14">
+              We don't just help you create, we help you sell, grow, and stay
+              profitable.
+            </p>
+          </div>
+
+          <div
+            class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="flex items-start gap-4 mb-4">
+              <div class="star-icon" style="animation-delay: 0.9s">
+                <span class="text-white text-xl">⭐</span>
+              </div>
+              <h4 class="text-white text-xl sm:text-2xl font-bold">
+                Built on Shared Success
+              </h4>
+            </div>
+            <p class="text-neutral-300 text-base sm:text-lg leading-relaxed pl-14">
+              We grow with you, not at your expense.
+            </p>
+          </div>
+
+          <div
+            class="fade-in feature-card rounded-2xl p-6 sm:p-8 md:col-span-2 relative z-10"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="flex items-start gap-4 mb-4">
+              <div class="star-icon" style="animation-delay: 1.2s">
+                <span class="text-white text-xl">⭐</span>
+              </div>
+              <h4 class="text-white text-xl sm:text-2xl font-bold">
+                Hands-On Execution
+              </h4>
+            </div>
+            <p class="text-neutral-300 text-base sm:text-lg leading-relaxed pl-14">
+              We don't just advise. We build, launch, market, and scale
+              alongside you until the business succeeds.
             </p>
           </div>
         </div>
-      </div>
 
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section id="bookACall" class="cta-section py-16 sm:py-20 md:py-28 px-4 sm:px-6 md:px-8">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8">
-        Ready to Build Something Profitable?
-      </h2>
-      <p class="text-neutral-300 text-lg sm:text-xl md:text-2xl mb-10 sm:mb-12 leading-relaxed">
-        Let's explore your vision and see if we're the right fit for each other.
-      </p>
-      <a href="https://calendly.com/didiazubike/strategy-call" target="_blank" class="cta-button inline-block px-10 sm:px-12 md:px-16 py-5 sm:py-6 md:py-7 rounded-full text-white text-xl sm:text-2xl md:text-3xl font-bold">
-        Let's Build Together →
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black border-t border-neutral-800 py-12 sm:py-16 px-4 sm:px-6 md:px-8">
-    <div class="max-w-7xl mx-auto">
-      
-      <!-- Footer Content -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-8 sm:mb-12">
-        
-        <!-- Company Info -->
-        <div>
-          <h3 class="text-white text-2xl font-bold mb-4">Incomio</h3>
-          <p class="text-neutral-400 text-sm leading-relaxed">
-            Your collaborative venture studio partner. We co-build digital businesses that thrive.
-          </p>
-        </div>
-
-        <!-- Studios  -->
-        <div>
-          <h4 class="text-white font-bold mb-4">Studios</h4>
-          <ul class="space-y-2">
-            <li><a href="./digit.html" target="_blank" class="text-neutral-400 hover:text-white transition-colors text-sm">Digital Products </a></li>
-            <li><a href="./app.html" target="_blank" class="text-neutral-400 hover:text-white transition-colors text-sm">Apps</a></li>
-            <li><a href="./blockchain.html" target="_blank" class="text-neutral-400 hover:text-white transition-colors text-sm">Blockchain</a></li>
-            <li><a href="./ecommerce.html" target="_blank" class="text-neutral-400 hover:text-white transition-colors text-sm">E-commerce</a></li>
-          </ul>
-        </div> 
-
-        <!-- Quick Links -->
-        <div>
-          <h4 class="text-white font-bold mb-4">Quick Links</h4>
-          <ul class="space-y-2">
-            <li><a href="#whyIncomio" class="text-neutral-400 hover:text-white transition-colors text-sm">Why Us </a></li>
-            <li><a href="#services" class="text-neutral-400 hover:text-white transition-colors text-sm">Services</a></li>
-            <li><a href="#OurProcess" class="text-neutral-400 hover:text-white transition-colors text-sm">Process</a></li>
-            <li><a href="https://calendly.com/didiazubike/strategy-call" class="text-neutral-400 hover:text-white transition-colors text-sm">Book a Call</a></li>
-          </ul>
-        </div>
-
-
-        
-
-        <!-- Contact Info -->
-        <div>
-          <h4 class="text-white font-bold mb-4">Get in Touch</h4>
-          <ul class="space-y-2">
-            <li><a href="mailto:joinincomio@gmail.com" class="text-neutral-400 hover:text-white transition-colors text-sm">joinincomio@gmail.com</a></li>
-            <li class="text-neutral-400 text-sm">Available for partnerships worldwide.</li>
-          </ul>
-          <!-- Social Links -->
-          <div class="flex gap-4 mt-6">
-            <a href="#" class="w-8 h-8 rounded-full bg-neutral-800 hover:bg-blue-600 flex items-center justify-center transition-colors">
-              <span class="text-white text-lg">𝕏</span>
-            </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-neutral-800 hover:bg-blue-600 flex items-center justify-center transition-colors">
-              <span class="text-white text-lg">in</span>
-            </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-neutral-800 hover:bg-blue-600 flex items-center justify-center transition-colors">
-              <span class="text-white text-lg">📧</span>
-            </a>
+        <!-- Note Card -->
+        <div
+          class="note-card rounded-3xl p-8 sm:p-10 md:p-12 lg:p-16 relative z-10"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="relative z-10">
+            <h3
+              class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center"
+            >
+              A Note From Us to You
+            </h3>
+            <div
+              class="space-y-4 text-white text-lg sm:text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto"
+            >
+              <p>
+                You don't have to build alone — and you don't need to have
+                everything figured out.
+              </p>
+              <p>
+                Whether you're starting with a dream, an audience, a skill, or a
+                clear concept, there's a path we can build together.
+              </p>
+              <p class="text-center font-bold text-xl sm:text-2xl md:text-3xl mt-8">
+                All it takes is the first conversation.
+              </p>
+            </div>
           </div>
         </div>
-
       </div>
+    </section>
 
-      <!-- Bottom Bar -->
-      <div class="border-t border-neutral-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-        <p class="text-neutral-500 text-sm">
-          © Incomio 2025. All rights reserved.
+    <!-- CTA Section -->
+    <section
+      id="bookACall"
+      class="cta-section py-16 sm:py-20 md:py-28 px-4 sm:px-6 md:px-8"
+      data-aos="zoom-in"
+    >
+      <div class="max-w-4xl mx-auto text-center">
+        <h2
+          class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8"
+        >
+          Ready to Build Something Profitable?
+        </h2>
+        <p
+          class="text-neutral-300 text-lg sm:text-xl md:text-2xl mb-10 sm:mb-12 leading-relaxed"
+        >
+          Let's explore your vision and see if we're the right fit for each
+          other.
         </p>
-        <div class="flex gap-6">
-          <a href="#" class="text-neutral-500 hover:text-white transition-colors text-sm">Privacy Policy</a>
-          <a href="#" class="text-neutral-500 hover:text-white transition-colors text-sm">Terms of Service</a>
+        <a
+          href="https://calendly.com/didiazubike/strategy-call"
+          target="_blank"
+          class="cta-button inline-block px-10 sm:px-12 md:px-16 py-5 sm:py-6 md:py-7 rounded-full text-white text-xl sm:text-2xl md:text-3xl font-bold"
+        >
+          Let's Build Together →
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-black border-t border-neutral-800 py-12 sm:py-16 px-4 sm:px-6 md:px-8"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
+      <div class="max-w-7xl mx-auto">
+        <!-- Footer Content -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-8 sm:mb-12"
+        >
+          <!-- Company Info -->
+          <div>
+            <h3 class="text-white text-2xl font-bold mb-4">Incomio</h3>
+            <p class="text-neutral-400 text-sm leading-relaxed">
+              Your collaborative venture studio partner. We co-build digital
+              businesses that thrive.
+            </p>
+          </div>
+
+          <!-- Studios  -->
+          <div>
+            <h4 class="text-white font-bold mb-4">Studios</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="./digit.html"
+                  target="_blank"
+                  class="text-neutral-400 hover:text-white transition-colors text-sm"
+                  >Digital Products
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./app.html"
+                  target="_blank"
+                  class="text-neutral-400 hover:text-white transition-colors text-sm"
+                  >Apps</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./blockchain.html"
+                  target="_blank"
+                  class="text-neutral-400 hover:text-white transition-colors text-sm"
+                  >Blockchain</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ecommerce.html"
+                  target="_blank"
+                  class="text-neutral-400 hover:text-white transition-colors text-sm"
+                  >E-commerce</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-white font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#whyIncomio"
+                  class="text-neutral-400 hover:text-white transition-colors text-sm"
+                  >Why Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-neutral-400 hover:text-white transition-colors text-sm"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#OurProcess"
+                  class="text-neutral-400 hover:text-white transition-colors text-sm"
+                  >Process</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://calendly.com/didiazubike/strategy-call"
+                  class="text-neutral-400 hover:text-white transition-colors text-sm"
+                  >Book a Call</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-white font-bold mb-4">Get in Touch</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="mailto:joinincomio@gmail.com"
+                  class="text-neutral-400 hover:text-white transition-colors text-sm"
+                  >joinincomio@gmail.com</a
+                >
+              </li>
+              <li class="text-neutral-400 text-sm">
+                Available for partnerships worldwide.
+              </li>
+            </ul>
+            <!-- Social Links -->
+            <div class="flex gap-4 mt-6">
+              <a
+                href="https://x.com/IncomioVentures?t=04RHJeBY4VgF3u1tp0BNJA&s=09"
+                class="w-8 h-8 rounded-full bg-neutral-800 hover:bg-blue-600 flex items-center justify-center transition-colors"
+              >
+                <span class="text-white text-lg">𝕏</span>
+              </a>
+              <a
+                href="mailto:joinincomio@gmail.com"
+                class="w-8 h-8 rounded-full bg-neutral-800 hover:bg-blue-600 flex items-center justify-center transition-colors"
+              >
+                <span class="text-white text-lg">📧</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div
+          class="border-t border-neutral-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-neutral-500 text-sm">
+            © Incomio 2025. All rights reserved.
+          </p>
+          <div class="flex gap-6">
+            <a
+              href="#"
+              class="text-neutral-500 hover:text-white transition-colors text-sm"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-neutral-500 hover:text-white transition-colors text-sm"
+              >Terms of Service</a
+            >
+          </div>
         </div>
       </div>
+    </footer>
 
-    </div>
-  </footer>
+    <!-- This was in your <header>, I moved it to the end of the <body> -->
+    <!-- It's best practice for performance. -->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
 
-
-</header>
     <script>
       const burgerCheckbox = document.getElementById("burger");
       const mobileMenu = document.getElementById("mobileMenu");
@@ -1111,54 +1490,54 @@
         });
       });
 
-      // carousel js code 
-   document.addEventListener('DOMContentLoaded', function() {
-      const carousel = document.querySelector('.carousel-container');
-      if (!carousel) return;
-      
-      let isUserScrolling = false;
-      let scrollTimeout;
-      let autoScrollInterval;
-      
-      carousel.addEventListener('scroll', function() {
-        isUserScrolling = true;
-        clearInterval(autoScrollInterval);
-        clearTimeout(scrollTimeout);
-        
-        scrollTimeout = setTimeout(function() {
-          isUserScrolling = false;
-          startAutoScroll();
-        }, 3000);
-      });
-      
-      function startAutoScroll() {
-        if (window.innerWidth >= 768) return;
-        
-        autoScrollInterval = setInterval(function() {
-          if (isUserScrolling) return;
-          
-          const scrollAmount = carousel.offsetWidth;
-          const maxScroll = carousel.scrollWidth - carousel.clientWidth;
-          
-          if (carousel.scrollLeft >= maxScroll - 10) {
-            carousel.scrollTo({ left: 0, behavior: 'smooth' });
-          } else {
-            carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-          }
-        }, 3000);
-      }
-      
-      if (window.innerWidth < 768) {
-        startAutoScroll();
-      }
-      
-      window.addEventListener('resize', function() {
-        clearInterval(autoScrollInterval);
-        if (window.innerWidth < 768 && !isUserScrolling) {
+      // carousel js code
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".carousel-container");
+        if (!carousel) return;
+
+        let isUserScrolling = false;
+        let scrollTimeout;
+        let autoScrollInterval;
+
+        carousel.addEventListener("scroll", function () {
+          isUserScrolling = true;
+          clearInterval(autoScrollInterval);
+          clearTimeout(scrollTimeout);
+
+          scrollTimeout = setTimeout(function () {
+            isUserScrolling = false;
+            startAutoScroll();
+          }, 3000);
+        });
+
+        function startAutoScroll() {
+          if (window.innerWidth >= 768) return;
+
+          autoScrollInterval = setInterval(function () {
+            if (isUserScrolling) return;
+
+            const scrollAmount = carousel.offsetWidth;
+            const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+
+            if (carousel.scrollLeft >= maxScroll - 10) {
+              carousel.scrollTo({ left: 0, behavior: "smooth" });
+            } else {
+              carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+            }
+          }, 3000);
+        }
+
+        if (window.innerWidth < 768) {
           startAutoScroll();
         }
+
+        window.addEventListener("resize", function () {
+          clearInterval(autoScrollInterval);
+          if (window.innerWidth < 768 && !isUserScrolling) {
+            startAutoScroll();
+          }
+        });
       });
-    });
     </script>
   </body>
 </html>
