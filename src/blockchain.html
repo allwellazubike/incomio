@@ -49,16 +49,52 @@
   <!-- ========================================
        NAVIGATION BAR
        ======================================== -->
-  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+ <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-6 py-4">
       <div class="flex items-center justify-between">
-        <!-- Logo Space -->
         <div class="w-[135px] font-bold text-black">
-          <img src="./images/incomioincomio-wordmark-black.png" alt="">
+          <img src="./images/incomioincomio-wordmark-black.png" alt="Incomio Logo">
         </div>
         
-        <!-- Desktop Navigation -->
+        <!-- Desktop Menu -->
         <div class="hidden md:flex items-center gap-8">
+          <a href="./index.html" target="_blank" class="text-gray-700 hover:text-black transition-colors">Home</a>
+          <a href="#difference" class="text-gray-700 hover:text-black transition-colors">Our Approach</a>
+          <a href="#paths" class="text-gray-700 hover:text-black transition-colors">Partnership Paths</a>
+          <a href="#chains" class="text-gray-700 hover:text-black transition-colors">Blockchain</a>
+          <a href="#platforms" class="text-gray-700 hover:text-black transition-colors">Projects</a>
+          <a href="#process" class="text-gray-700 hover:text-black transition-colors">How It Works</a>
+          <a href="https://calendly.com/didiazubike/strategy-call" target="_blank" class="cta-btn px-6 py-2 rounded-full text-white text-sm font-medium">Get Started</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="md:hidden text-black">
+          <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200 shadow-lg">
+      <div class="px-6 py-4 space-y-3">
+        <a href="./index.html" target="_blank" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Home</a>
+        <a href="#difference" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Our Approach</a>
+        <a href="#paths" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Partnership Paths</a>
+        <a href="#platforms" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Projects</a>
+        <a href="#chains" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Blockchain</a>
+        <a href="#process" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">How It Works</a>
+        <a href="https://calendly.com/didiazubike/strategy-call" target="_blank" class="block cta-btn px-6 py-3 rounded-full text-white text-sm font-medium text-center mt-4">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- <div class="hidden md:flex items-center gap-8">
           <a href="#dream" class="text-gray-700 hover:text-black transition-colors">The Dream</a>
           <a href="#difference" class="text-gray-700 hover:text-black transition-colors">Our Approach</a>
           <a href="#paths" class="text-gray-700 hover:text-black transition-colors">Partnership Paths</a>
@@ -66,22 +102,12 @@
           <a href="#chains" class="text-gray-700 hover:text-black transition-colors">Blockchains</a>
           <a href="#process" class="text-gray-700 hover:text-black transition-colors">How It Works</a>
           <a href="#cta" class="cta-btn px-6 py-2 rounded-full text-white text-sm font-medium">Get Started</a>
-        </div>
-        
-        <!-- Mobile Menu Button -->
-        <button class="md:hidden text-black">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </nav>
+        </div> -->
 
   <!-- ========================================
        HERO SECTION
        ======================================== -->
-  <section class="pt-32 pb-20 px-6">
+  <section id="heroSection" class="pt-32 pb-20 px-6">
     <div class="max-w-5xl mx-auto text-center">
       <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-black mb-8 leading-tight">
         Launch Your Blockchain<br><span class="italic">Hassle-Free</span>
@@ -91,7 +117,7 @@
         You’ve seen tokens 100x. You’ve watched NFT projects mint out in minutes. You know Web3 is the future. Now partner with Incomio to build your blockchain venture. No guesswork. No doing it alone.
       </p>
       
-      <a href="#cta" class="cta-btn inline-block px-10 py-4 rounded-full text-white text-lg font-medium">
+      <a href="https://calendly.com/didiazubike/strategy-call" target="_blank" class="cta-btn inline-block px-10 py-4 rounded-full text-white text-lg font-medium">
         Let’s Build Together →
       </a>
     </div>
@@ -565,7 +591,7 @@
         No navigating it alone. It starts with a conversation about building something revolutionary together.
       </p>
       
-      <a href="YOUR_CALENDLY_LINK_HERE" target="_blank" class="cta-btn inline-block px-12 py-5 rounded-full text-white text-xl font-bold mb-6">
+      <a href="https://calendly.com/didiazubike/strategy-call" target="_blank" class="cta-btn inline-block px-12 py-5 rounded-full text-white text-xl font-bold mb-6">
         Start the Conversation →
       </a>
       
@@ -596,10 +622,10 @@
         <div>
           <h4 class="text-black font-bold mb-4">Our Studios</h4>
           <ul class="space-y-2">
-            <li><a href="#" class="text-gray-600 hover:text-black transition-colors text-sm">Blockchain Studio</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-black transition-colors text-sm">App Studio</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-black transition-colors text-sm">E-Commerce Studio</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-black transition-colors text-sm">Digital Products Studio</a></li>
+            <li><a href="#heroSection" class="text-gray-600 hover:text-black transition-colors text-sm">Blockchain Studio</a></li>
+            <li><a href="./app.html" target="_blank" class="text-gray-600 hover:text-black transition-colors text-sm">App Studio</a></li>
+            <li><a href="./ecommerce.html" target="_blank" class="text-gray-600 hover:text-black transition-colors text-sm">E-Commerce Studio</a></li>
+            <li><a href="./digit.html" target="_blank" class="text-gray-600 hover:text-black transition-colors text-sm">Digital Products Studio</a></li>
           </ul>
         </div>
 
@@ -618,8 +644,8 @@
         <div>
           <h4 class="text-black font-bold mb-4">Get in Touch</h4>
           <ul class="space-y-2">
-            <li><a href="mailto:hello@incomio.com" class="text-gray-600 hover:text-black transition-colors text-sm">hello@incomio.com</a></li>
-            <li><a href="YOUR_CALENDLY_LINK_HERE" class="text-gray-600 hover:text-black transition-colors text-sm">Book a Call</a></li>
+            <li><a href="mailto:hello@incomio.com" class="text-gray-600 hover:text-black transition-colors text-sm">joinincomio@gmail.com</a></li>
+            <li><a href="https://calendly.com/didiazubike/strategy-call" target="_blank" class="text-gray-600 hover:text-black transition-colors text-sm">Book a Call</a></li>
           </ul>
           <!-- Social Links -->
           <div class="flex gap-3 mt-4">
@@ -647,6 +673,29 @@
 
     </div>
   </footer>
+
+   <script>
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const hamburgerIcon = document.getElementById('hamburgerIcon');
+  const closeIcon = document.getElementById('closeIcon');
+
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    hamburgerIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
+
+  // Close menu when clicking on a link
+  const mobileLinks = mobileMenu.querySelectorAll('a');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      hamburgerIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    });
+  });
+</script>
 
 </body>
 </html>
