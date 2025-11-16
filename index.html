@@ -1,3 +1,5 @@
+<!-- npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./css/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/texthome.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1&display=swap"
@@ -13,7 +15,7 @@
     />
     <link
       rel="icon"
-      href="./images/incomioboxed-icon-black-white.png"
+      href="images/incomioboxed-icon-black-white.png"
       type="image/x-icon"
     />
 
@@ -171,7 +173,7 @@
         </div>
 
         <!-- book a call button for mobile  -->
-        <div class="text-center mt-13" data-aos="fade-up" data-aos-delay="500">
+        <div class="text-center mt-13" data-aos="fade-up" >
           <a
             href="https://calendly.com/didiazubike/strategy-call"
             target="_blank"
@@ -190,7 +192,6 @@
     >
       <div
         class="max-w-7xl mx-auto flex items-center justify-center"
-        data-aos="zoom-in-up"
       >
         <div
           class="bg-neutral-800 rounded-3xl p-8 sm:p-10 md:p-12 max-w-sm sm:max-w-md md:max-w-3xl w-full"
@@ -422,8 +423,6 @@
         <!-- CTA Card -->
         <div
           class="cta-card rounded-3xl p-8 sm:p-10 md:p-12 text-center max-w-4xl mx-auto relative z-10"
-          data-aos="fade-up"
-          data-aos-delay="300"
         >
           <div class="relative z-10">
             <p
@@ -449,7 +448,6 @@
         <!-- Header -->
         <div
           class="text-center mb-12 sm:mb-16 md:mb-20"
-          data-aos="fade-up"
         >
           <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
             What We Build Together
@@ -472,7 +470,7 @@
             rel="noopener noreferrer"
             class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block"
             data-aos="fade-up"
-            data-aos-delay="100"
+            data-aos-delay="50"
           >
             <div class="flex items-start gap-4 mb-6">
               <div
@@ -504,7 +502,7 @@
             class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block"
             style="animation-delay: 0.5s"
             data-aos="fade-up"
-            data-aos-delay="200"
+            data-aos-delay="100"
           >
             <div class="flex items-start gap-4 mb-6">
               <div
@@ -534,7 +532,7 @@
             class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block"
             style="animation-delay: 1s"
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="150"
           >
             <div class="flex items-start gap-4 mb-6">
               <div
@@ -564,7 +562,7 @@
             class="studio-card bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl p-8 sm:p-10 md:p-12 border border-neutral-700 hover:border-blue-500 transition-all duration-300 group block"
             style="animation-delay: 1.5s"
             data-aos="fade-up"
-            data-aos-delay="400"
+            data-aos-delay="200"
           >
             <div class="flex items-start gap-4 mb-6">
               <div
@@ -590,7 +588,7 @@
         </div>
 
         <!-- CTA Button -->
-        <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="150">
           <a
             href="https://calendly.com/didiazubike/strategy-call"
             target="_blank"
@@ -613,7 +611,6 @@
         <!-- Header -->
         <div
           class="text-center mb-12 sm:mb-16 md:mb-20"
-          data-aos="fade-up"
         >
           <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
             How Our Partnerships Work
@@ -629,8 +626,7 @@
         >
           <!-- Left Side - What We Don't Do -->
           <div
-            class="split-bg-left p-8 sm:p-10 md:p-12 lg:rounded-3xl slide-in-left"
-            data-aos="fade-right"
+            class="split-bg-left p-8 sm:p-10 md:p-12 lg:rounded-3xl "
           >
             <div class="space-y-6 sm:space-y-8">
               <div class="flex items-start gap-4 group">
@@ -659,8 +655,7 @@
 
           <!-- Right Side - What We Do -->
           <div
-            class="split-bg-right p-8 sm:p-10 md:p-12 lg:rounded-3xl slide-in-right mt-8 lg:mt-0"
-            data-aos="fade-left"
+            class="split-bg-right p-8 sm:p-10 md:p-12 lg:rounded-3xl mt-8 lg:mt-0"
           >
             <div class="space-y-6 sm:space-y-8">
               <div class="flex items-start gap-4 group">
@@ -708,8 +703,6 @@
         <!-- Bottom Content -->
         <div
           class="text-center space-y-8 sm:space-y-10 md:space-y-12"
-          data-aos="fade-up"
-          data-aos-delay="200"
         >
           <div class="max-w-4xl mx-auto">
             <p
@@ -728,8 +721,6 @@
           <!-- Winning Statement Card -->
           <div
             class="winning-card rounded-3xl p-10 sm:p-12 md:p-16 max-w-3xl mx-auto relative"
-            data-aos="zoom-in"
-            data-aos-delay="300"
           >
             <div class="relative z-10">
               <p
@@ -752,7 +743,6 @@
         <!-- Header -->
         <div
           class="text-center mb-16 sm:mb-20 md:mb-24"
-          data-aos="fade-up"
         >
           <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold">
             What You Bring
@@ -765,7 +755,7 @@
           <!-- Desktop: Side by Side Layout -->
           <div class="hidden lg:grid lg:grid-cols-2 lg:gap-12 items-start">
             <!-- You Bring Column -->
-            <div data-aos="fade-right" data-aos-duration="600">
+            <div>
               <div class="text-center mb-8">
                 <h3
                   class="text-white text-3xl lg:text-4xl font-bold inline-block px-8 py-3 bg-neutral-800 rounded-full"
@@ -810,7 +800,7 @@
             </div>
 
             <!-- We Bring Column -->
-            <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+            <div>
               <div class="text-center mb-8">
                 <h3
                   class="text-white text-3xl lg:text-4xl font-bold inline-block px-8 py-3 rounded-full blue-gradient"
@@ -866,7 +856,7 @@
           <!-- Mobile: Stacked Layout -->
           <div class="lg:hidden">
             <!-- You Bring Section -->
-            <div class="mb-8" data-aos="fade-up">
+            <div class="mb-8">
               <div class="text-center mb-6">
                 <h3
                   class="text-white text-2xl sm:text-3xl font-bold inline-block px-6 py-2 bg-neutral-800 rounded-full"
@@ -908,7 +898,7 @@
             </div>
 
             <!-- We Bring Section -->
-            <div data-aos="fade-up">
+            <div">
               <div class="text-center mb-6">
                 <h3
                   class="text-white text-2xl sm:text-3xl font-bold inline-block px-6 py-2 rounded-full blue-gradient"
@@ -963,8 +953,6 @@
         <div
           class="result-card rounded-3xl p-10 sm:p-12 md:p-16 lg:p-20 text-center relative max-w-5xl mx-auto"
           style="animation: slideUp 0.6s ease-out 0.8s backwards"
-          data-aos="fade-up"
-          data-aos-delay="300"
         >
           <div class="relative z-10">
             <p
@@ -986,7 +974,6 @@
         <!-- Header -->
         <div
           class="text-center mb-12 sm:mb-16 md:mb-20"
-          data-aos="fade-up"
         >
           <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
             Our Process
@@ -1005,7 +992,6 @@
             <!-- Step 1 -->
             <div
               class="process-step flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12"
-              data-aos="fade-up"
             >
               <div
                 class="flex items-center lg:items-center gap-6 lg:flex-1 lg:justify-end w-full lg:w-auto"
@@ -1043,7 +1029,6 @@
             <!-- Step 2 -->
             <div
               class="process-step flex flex-col lg:flex-row-reverse items-start lg:items-center gap-6 lg:gap-12"
-              data-aos="fade-up"
             >
               <div
                 class="flex items-center lg:items-center gap-6 lg:flex-1 w-full lg:w-auto"
@@ -1081,7 +1066,6 @@
             <!-- Step 3 -->
             <div
               class="process-step step-3 flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12"
-              data-aos="fade-up"
             >
               <div
                 class="flex items-center lg:items-center gap-6 lg:flex-1 lg:justify-end w-full lg:w-auto"
@@ -1129,7 +1113,6 @@
         <!-- Header -->
         <div
           class="text-center mb-12 sm:mb-16 md:mb-20"
-          data-aos="fade-up"
         >
           <h2 class="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
             Why Incomio
@@ -1154,9 +1137,7 @@
           class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20 md:mb-24"
         >
           <div
-            class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10"
-            data-aos="fade-up"
-            data-aos-delay="200"
+            class="feature-card rounded-2xl p-6 sm:p-8 relative z-10"
           >
             <div class="flex items-start gap-4 mb-4">
               <div class="star-icon">
@@ -1174,8 +1155,6 @@
 
           <div
             class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10"
-            data-aos="fade-up"
-            data-aos-delay="300"
           >
             <div class="flex items-start gap-4 mb-4">
               <div class="star-icon" style="animation-delay: 0.3s">
@@ -1193,8 +1172,6 @@
 
           <div
             class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10"
-            data-aos="fade-up"
-            data-aos-delay="400"
           >
             <div class="flex items-start gap-4 mb-4">
               <div class="star-icon" style="animation-delay: 0.6s">
@@ -1212,8 +1189,6 @@
 
           <div
             class="fade-in feature-card rounded-2xl p-6 sm:p-8 relative z-10"
-            data-aos="fade-up"
-            data-aos-delay="500"
           >
             <div class="flex items-start gap-4 mb-4">
               <div class="star-icon" style="animation-delay: 0.9s">
@@ -1230,8 +1205,6 @@
 
           <div
             class="fade-in feature-card rounded-2xl p-6 sm:p-8 md:col-span-2 relative z-10"
-            data-aos="fade-up"
-            data-aos-delay="600"
           >
             <div class="flex items-start gap-4 mb-4">
               <div class="star-icon" style="animation-delay: 1.2s">
@@ -1251,8 +1224,6 @@
         <!-- Note Card -->
         <div
           class="note-card rounded-3xl p-8 sm:p-10 md:p-12 lg:p-16 relative z-10"
-          data-aos="fade-up"
-          data-aos-delay="300"
         >
           <div class="relative z-10">
             <h3
@@ -1284,7 +1255,6 @@
     <section
       id="bookACall"
       class="cta-section py-16 sm:py-20 md:py-28 px-4 sm:px-6 md:px-8"
-      data-aos="zoom-in"
     >
       <div class="max-w-4xl mx-auto text-center">
         <h2
@@ -1312,6 +1282,7 @@
     <footer
       class="bg-black border-t border-neutral-800 py-12 sm:py-16 px-4 sm:px-6 md:px-8"
       data-aos="fade-up"
+      data-aos-duration="250"
       data-aos-anchor-placement="top-bottom"
     >
       <div class="max-w-7xl mx-auto">
@@ -1458,14 +1429,11 @@
       </div>
     </footer>
 
-    <!-- This was in your <header>, I moved it to the end of the <body> -->
-    <!-- It's best practice for performance. -->
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 800, // values from 0 to 3000, with step 50ms
-        once: true, // whether animation should happen only once - while scrolling down
+        duration: 800,
+        once: true,
       });
     </script>
 

@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="./css/output.css" rel="stylesheet" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="./images/incomioboxed-icon-black-white.png"
+      type="image/x-icon"
+    />
+    <title>Digital Products Studio | Incomio</title>
+    <style>
+      .satoshi {
+        font-family: "Satoshi", sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .blue-gradient {
+        background: linear-gradient(135deg, #4169e1, #1e3a8a);
+      }
+      .cta-btn {
+        background: linear-gradient(135deg, #4169e1, #1e3a8a);
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(65, 105, 225, 0.3);
+      }
+      .cta-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(65, 105, 225, 0.4);
+      }
+
+      /* CTA Button styling */
+      .cta-btn {
+        background: linear-gradient(135deg, #4169e1, #1e3a8a);
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(65, 105, 225, 0.3);
+      }
+
+      .cta-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(65, 105, 225, 0.4);
+      }
+
+      nav {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+      }
+    </style>
+  </head>
+  <body class="bg-white satoshi">
+    <!-- NAVIGATION -->
+
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200"
+    >
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="w-[135px] font-bold text-black">
+            <img
+              src="./images/incomioincomio-wordmark-black.png"
+              alt="Incomio Logo"
+            />
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              href="./index.html"
+              target="_blank"
+              class="text-gray-700 hover:text-black transition-colors"
+              >Home</a
+            >
+            <a
+              href="#difference"
+              class="text-gray-700 hover:text-black transition-colors"
+              >Our Approach</a
+            >
+            <a
+              href="#paths"
+              class="text-gray-700 hover:text-black transition-colors"
+              >Partnership Paths</a
+            >
+            <a
+              href="#products"
+              class="text-gray-700 hover:text-black transition-colors"
+              >Products</a
+            >
+            <a
+              href="#process"
+              class="text-gray-700 hover:text-black transition-colors"
+              >How It Works</a
+            >
+            <a
+              href="https://calendly.com/didiazubike/strategy-call"
+              target="_blank"
+              class="cta-btn px-6 py-2 rounded-full text-white text-sm font-medium"
+              >Get Started</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobileMenuBtn" class="md:hidden text-black">
+            <svg
+              id="hamburgerIcon"
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+            <svg
+              id="closeIcon"
+              class="w-6 h-6 hidden"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-white border-t border-gray-200 shadow-lg"
+      >
+        <div class="px-6 py-4 space-y-3">
+          <a
+            href="./index.html"
+            target="_blank"
+            class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors"
+            >Home</a
+          >
+          <a
+            href="#difference"
+            class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors"
+            >Our Approach</a
+          >
+          <a
+            href="#paths"
+            class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors"
+            >Partnership Paths</a
+          >
+          <a
+            href="#products"
+            class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors"
+            >Products</a
+          >
+          <a
+            href="#process"
+            class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors"
+            >How It Works</a
+          >
+          <a
+            href="https://calendly.com/didiazubike/strategy-call"
+            target="_blank"
+            class="block cta-btn px-6 py-3 rounded-full text-white text-sm font-medium text-center mt-4"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="heroSection" class="pt-32 pb-20 px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <h1
+          class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-black mb-8 leading-tight"
+        >
+          Turn Your Expertise Into<br /><span class="italic"
+            >Predictable Income</span
+          >
+        </h1>
+        <p
+          class="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto mb-12 leading-relaxed"
+        >
+          You’ve seen coaches and creators making $10k-$100k/month with courses,
+          memberships, and digital products. Now partner with Incomio to build
+          yours. No expensive coaching programs. No launch anxiety. No doing it
+          alone.
+        </p>
+        <a
+          href="https://calendly.com/didiazubike/strategy-call"
+          target="_blank"
+          class="cta-btn inline-block px-10 py-4 rounded-full text-white text-lg font-medium"
+        >
+          Let’s Build Together
+        </a>
+      </div>
+    </section>
+
+    <!-- THE DREAM SECTION (CREATIVE + SVG ICONS) -->
+    <section id="dream" class="py-20 px-6 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <!-- Headline -->
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-12 text-center"
+        >
+          You’ve Seen People Making Money Selling
+          <span class="text-blue-600">Information</span>
+        </h2>
+
+        <!-- Success Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div
+            class="bg-white p-8 rounded-xl border border-gray-200 text-center shadow-sm"
+          >
+            <p class="text-3xl font-bold text-black">$50k/month</p>
+            <p class="text-lg text-gray-600">Online courses</p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-xl border border-gray-200 text-center shadow-sm"
+          >
+            <p class="text-3xl font-bold text-black">1,000+</p>
+            <p class="text-lg text-gray-600">Paying members</p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-xl border border-gray-200 text-center shadow-sm"
+          >
+            <p class="text-3xl font-bold text-black">Autopilot</p>
+            <p class="text-lg text-gray-600">Ebook sales</p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-xl border border-gray-200 text-center shadow-sm"
+          >
+            <p class="text-3xl font-bold text-black">Passive</p>
+            <p class="text-lg text-gray-600">Templates & downloads</p>
+          </div>
+        </div>
+
+        <!-- Core Truth -->
+        <div class="text-center mb-16">
+          <p class="text-2xl font-bold text-black mb-4">
+            You know the opportunity is real.
+          </p>
+          <p class="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            And you already have the knowledge. You already have the
+            expertise.<br />
+            <span class="italic text-red-600"
+              >But here’s the truth: knowledge alone doesn’t build wealth.</span
+            >
+          </p>
+        </div>
+
+        <!-- Pain Points -->
+        <h3 class="text-3xl font-bold text-center mb-8">
+          Most experts stay stuck because:
+        </h3>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 max-w-5xl mx-auto"
+        >
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-red-500 flex-shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              They trade time for money (1:1 clients, hourly coaching).
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-red-500 flex-shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              They have knowledge, but no system to monetize it at scale.
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-red-500 flex-shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              They don’t know how to package their expertise into highly
+              profitable offers.
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-red-500 flex-shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              They don’t know the client acquisition models that work.
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-red-500 flex-shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              They don’t have sufficient eyes / traffic on their offers.
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-red-500 flex-shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              They don’t have the marketing or operational backbone to grow.
+            </p>
+          </div>
+        </div>
+        <p class="text-center text-lg italic text-gray-600 mb-16">
+          The result? <strong>Overworked. Undervalued. Invisible.</strong>
+        </p>
+
+        <!-- Solution -->
+        <div
+          class="bg-gradient-to-r from-blue-50 to-indigo-50 p-10 rounded-2xl mb-16"
+        >
+          <h3 class="text-3xl font-bold text-center mb-8">
+            This is where we come in.
+          </h3>
+          <p class="text-xl text-center mb-10 max-w-4xl mx-auto">
+            At Incomio, we build the
+            <strong>entire business engine</strong> around your expertise.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <svg
+                class="w-8 h-8 text-green-500 mx-auto mb-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="font-bold text-lg">Signature Digital Offers</p>
+              <p class="text-gray-700">
+                We turn your expertise into premium irresistible offers people
+                need.
+              </p>
+            </div>
+            <div class="text-center">
+              <svg
+                class="w-8 h-8 text-green-500 mx-auto mb-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="font-bold text-lg">Memberships</p>
+              <p class="text-gray-700">
+                Recurring income from engaged communities.
+              </p>
+            </div>
+            <div class="text-center">
+              <svg
+                class="w-8 h-8 text-green-500 mx-auto mb-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="font-bold text-lg">SaaS</p>
+              <p class="text-gray-700">
+                Software from your knowledge — monthly recurring revenue.
+              </p>
+            </div>
+            <div class="text-center">
+              <svg
+                class="w-8 h-8 text-green-500 mx-auto mb-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="font-bold text-lg">Funnels & Ads That Convert</p>
+              <p class="text-gray-700">
+                High-converting traffic that turns into paying customers.
+              </p>
+            </div>
+            <div class="text-center">
+              <svg
+                class="w-8 h-8 text-green-500 mx-auto mb-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="font-bold text-lg">Client Retention</p>
+              <p class="text-gray-700">
+                We set up systems to keep clients satisfied and glued.
+              </p>
+            </div>
+            <div class="text-center">
+              <svg
+                class="w-8 h-8 text-green-500 mx-auto mb-3"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="font-bold text-lg">Done-for-You Execution</p>
+              <p class="text-gray-700">
+                We handle the heavy lifting. You focus on growth.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final Punch -->
+        <div class="text-center mb-16">
+          <p class="text-2xl font-bold text-black mb-4">
+            You bring the expertise.<br />
+            <span class="text-blue-600"
+              >We bring the systems, structure, and scale.</span
+            >
+          </p>
+          <p class="text-3xl font-bold">Together → we build your empire.</p>
+        </div>
+
+        <!-- Invitation CTA -->
+        <div class="text-center mb-16">
+          <h3 class="text-3xl font-bold mb-6">Your Invitation</h3>
+          <p class="text-xl mb-8 max-w-3xl mx-auto">
+            If you’re ready to:<br />
+            <span class="inline-flex items-center gap-2 text-green-600">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Scale beyond 1:1 coaching </span
+            ><br />
+            <span class="inline-flex items-center gap-2 text-green-600">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Build predictable digital income streams </span
+            ><br />
+            <span class="inline-flex items-center gap-2 text-green-600">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Step into your role as the authority in your space
+            </span>
+          </p>
+          <a
+            href="https://calendly.com/didiazubike/strategy-call"
+            class="cta-btn inline-block px-12 py-5 rounded-full text-white text-xl font-bold"
+          >
+            Apply to Partner With Us Today
+          </a>
+        </div>
+
+        <!-- Founder Note -->
+        <div
+          class="bg-black text-white p-10 rounded-2xl max-w-4xl mx-auto mb-16"
+        >
+          <img
+            src="./images/Coach Didi Img.jpg"
+            class="w-40 mb-8 rounded-3xl"
+          />
+          <p class="text-lg italic mb-6">
+            “I started Incomio because I saw too many brilliant experts trapped
+            in business models that couldn’t scale. Your knowledge is priceless,
+            but without the right system, it won’t create the freedom and wealth
+            you deserve. At Incomio, we build those systems with you, so your
+            expertise becomes the foundation of a digital empire.”
+          </p>
+          <p class="text-right font-bold">— Didi, Founder of Incomio</p>
+        </div>
+
+        <!-- Edge -->
+        <div class="text-center">
+          <h3 class="text-3xl font-bold mb-6">
+            The Incomio Edge – Why We’re Different
+          </h3>
+          <p class="text-xl max-w-4xl mx-auto leading-relaxed">
+            We’re not selling you a course. We’re not an agency.<br />
+            <span class="font-bold">We are your growth partner.</span><br />
+            Other coaches will “teach you marketing.” Agencies will “run your
+            ads.”<br />
+            At Incomio, we build a
+            <strong>complete, scalable business model</strong> around your
+            knowledge, designed to grow from five figures to six and seven
+            figures.<br />
+            That’s why our partners call us the
+            <span class="italic text-blue-600"
+              >secret weapon behind their success.</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE DO DIGITAL PRODUCTS DIFFERENTLY -->
+    <section id="difference" class="py-20 px-6 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center"
+        >
+          How We Do Digital Products<br /><span class="italic"
+            >Differently</span
+          >
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="space-y-6">
+            <div class="border-l-4 border-black pl-6">
+              <h3 class="text-2xl font-bold text-black mb-3">
+                No Spending a Year Creating Content
+              </h3>
+              <p class="text-lg text-gray-700">
+                We help you create lean, valuable products fast. Launch in
+                weeks, not years. Improve based on real customer feedback.
+              </p>
+            </div>
+            <div class="border-l-4 border-black pl-6">
+              <h3 class="text-2xl font-bold text-black mb-3">
+                No Tech Overwhelm
+              </h3>
+              <p class="text-lg text-gray-700">
+                We handle course platforms, email marketing, payment processing,
+                membership sites, and all the technical pieces.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div class="border-l-4 border-black pl-6">
+              <h3 class="text-2xl font-bold text-black mb-3">
+                No Launch Anxiety
+              </h3>
+              <p class="text-lg text-gray-700">
+                We build the marketing strategy, create the launch plan, and
+                drive traffic. You don’t launch to an empty room.
+              </p>
+            </div>
+            <div class="border-l-4 border-black pl-6">
+              <h3 class="text-2xl font-bold text-black mb-3">
+                No Massive Upfront Investment
+              </h3>
+              <p class="text-lg text-gray-700">
+                We share the risk. When the product sells, we both profit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TWO PARTNERSHIP PATHS -->
+    <section id="paths" class="py-20 px-6 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center"
+        >
+          Two Ways to Partner
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Path 1 -->
+          <div class="bg-white p-10 rounded-2xl border-2 border-gray-200">
+            <div
+              class="bg-black text-white px-4 py-2 rounded-full inline-block mb-6 text-sm font-bold"
+            >
+              PATH 1
+            </div>
+            <h3 class="text-3xl font-bold text-black mb-4">
+              You Have Expertise to Share
+            </h3>
+            <p class="text-xl text-gray-700 mb-8">
+              You Know Something People Will Pay to Learn
+            </p>
+            <p class="text-lg text-gray-700 mb-8">
+              Maybe you’re a coach, consultant, or expert in your field. Maybe
+              you’ve helped people get results and know you could package that
+              knowledge. Maybe you have skills others want to learn.
+            </p>
+            <div class="mb-8">
+              <h4 class="text-xl font-bold text-black mb-4">You bring:</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Your expertise, knowledge, or unique skills</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Ability to create or guide content</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Your commitment to helping clients succeed</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-black mb-4">We bring:</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span
+                    >Content strategy and structure (what to create in what
+                    order)</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Course/product platform setup</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Sales page copywriting and design</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Email marketing and automation</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Launch strategy and traffic generation</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Full marketing execution</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Customer support and operations</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Path 2 -->
+          <div class="bg-white p-10 rounded-2xl border-2 border-blue-600">
+            <div
+              class="blue-gradient text-white px-4 py-2 rounded-full inline-block mb-6 text-sm font-bold"
+            >
+              PATH 2
+            </div>
+            <h3 class="text-3xl font-bold text-black mb-4">
+              We Have Product Ideas That Need an Expert
+            </h3>
+            <p class="text-xl text-gray-700 mb-8">
+              We’ve Identified Profitable Niches
+            </p>
+            <p class="text-lg text-gray-700 mb-8">
+              We’ve researched digital product opportunities in profitable
+              niches - productivity, health, business skills, personal
+              development, creative skills, etc. We need the right expert who
+              can create or guide the content.
+            </p>
+            <div class="mb-8">
+              <h4 class="text-xl font-bold text-black mb-4">We bring:</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Validated product concept and market research</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Full technical setup and infrastructure</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Marketing and launch strategy and execution</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Sales and operations</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-black mb-4">You bring:</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Expertise in the niche</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Content creation or guidance</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-blue-600 mt-1">•</span
+                  ><span>Credibility in the space</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIGITAL PRODUCTS WE BUILD -->
+    <section id="products" class="py-20 px-6 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center"
+        >
+          Digital Products<br />We Build
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors"
+          >
+            <h3 class="text-2xl font-bold text-black mb-4">Online Courses</h3>
+            <p class="text-gray-700">
+              Step-by-step training that teaches specific skills or gets
+              specific results. Video, audio, text, or mixed format.
+            </p>
+          </div>
+          <div
+            class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors"
+          >
+            <h3 class="text-2xl font-bold text-black mb-4">Memberships</h3>
+            <p class="text-gray-700">
+              Recurring revenue through monthly access to exclusive content,
+              community, coaching, or resources.
+            </p>
+          </div>
+          <div
+            class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors"
+          >
+            <h3 class="text-2xl font-bold text-black mb-4">SaaS</h3>
+            <p class="text-gray-700">
+              Software products based on your expertise that your audience
+              subscribes to monthly, generating consistent recurring revenue.
+            </p>
+          </div>
+          <div
+            class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors"
+          >
+            <h3 class="text-2xl font-bold text-black mb-4">Ebooks & Guides</h3>
+            <p class="text-gray-700">
+              Written expertise packaged into downloadable PDFs. Lower price
+              point, faster to create, great for list building or passive
+              income.
+            </p>
+          </div>
+          <div
+            class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors"
+          >
+            <h3 class="text-2xl font-bold text-black mb-4">
+              Templates & Digital Downloads
+            </h3>
+            <p class="text-gray-700">
+              Spreadsheets, checklists, workbooks, Notion templates, design
+              files - anything that saves people time or solves a specific
+              problem.
+            </p>
+          </div>
+          <div
+            class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors"
+          >
+            <h3 class="text-2xl font-bold text-black mb-4">
+              Coaching Programs
+            </h3>
+            <p class="text-gray-700">
+              High-ticket digital programs combining coursework with live
+              coaching, accountability, and community.
+            </p>
+          </div>
+          <div
+            class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors"
+          >
+            <h3 class="text-2xl font-bold text-black mb-4">
+              Workshops & Masterclasses
+            </h3>
+            <p class="text-gray-700">
+              Short-form, focused training on specific topics. Live or
+              pre-recorded. Great for testing ideas before building full
+              courses.
+            </p>
+          </div>
+          <div
+            class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors"
+          >
+            <h3 class="text-2xl font-bold text-black mb-4">
+              Community Platforms
+            </h3>
+            <p class="text-gray-700">
+              Paid communities built on Discord, Circle, Slack, or custom
+              platforms. Recurring revenue from access and connection.
+            </p>
+          </div>
+          <div
+            class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors"
+          >
+            <h3 class="text-2xl font-bold text-black mb-4">
+              Digital Product Bundles
+            </h3>
+            <p class="text-gray-700">
+              Package multiple products together at a higher price point. Ebooks
+              + templates + mini-courses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO THIS IS FOR -->
+    <section class="py-20 px-6 bg-gray-50">
+      <div class="max-w-5xl mx-auto">
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center"
+        >
+          This Is For You If…
+        </h2>
+        <div class="space-y-6">
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              You’ve been watching other experts make $10k+ months and want to
+              build your own
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              You have expertise people ask you about repeatedly
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              You’re a coach or consultant who wants scalable revenue instead of
+              trading time for money
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              You’ve tried to create a course / program before but got
+              overwhelmed and quit
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              You have knowledge but don’t know how to package it into a product
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              You’re great at what you do but not so good at marketing
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              You’ve been “planning” to launch for months (or years) but keep
+              procrastinating
+            </p>
+          </div>
+          <div
+            class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200"
+          >
+            <svg
+              class="w-6 h-6 text-blue-600 flex-shrink-0 mt-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="text-lg text-gray-800">
+              You have an audience or email list but don’t know what to sell
+              them
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="process" class="py-20 px-6 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center"
+        >
+          Simple Process,<br /><span class="italic">Real Results</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="relative">
+            <div
+              class="absolute top-0 left-0 w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold"
+            >
+              1
+            </div>
+            <div class="ml-20">
+              <h3 class="text-2xl font-bold text-black mb-4">
+                Free Discovery Call (30 mins)
+              </h3>
+              <p class="text-lg text-gray-700">
+                We talk about your expertise or show you opportunities we’ve
+                identified. No sales pitch. Just honest conversation about what
+                we can do to get results.
+              </p>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute top-0 left-0 w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold"
+            >
+              2
+            </div>
+            <div class="ml-20">
+              <h3 class="text-2xl font-bold text-black mb-4">
+                Partnership Agreement
+              </h3>
+              <p class="text-lg text-gray-700">
+                If we’re a fit, we agree on responsibilities, and revenue
+                sharing. Everything will be clear and documented.
+              </p>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute top-0 left-0 w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold"
+            >
+              3
+            </div>
+            <div class="ml-20">
+              <h3 class="text-2xl font-bold text-black mb-4">
+                Create & Launch
+              </h3>
+              <p class="text-lg text-gray-700">
+                We help you create lean, valuable product(s). Write the sales
+                page. Set up the tech and sales funnels. Build the email
+                sequence. Generate traffic. Launch successfully. Retain clients.
+                You show up and deliver.
+              </p>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute top-0 left-0 w-16 h-16 blue-gradient text-white rounded-full flex items-center justify-center text-2xl font-bold"
+            >
+              4
+            </div>
+            <div class="ml-20">
+              <h3 class="text-2xl font-bold text-black mb-4">Grow & Scale</h3>
+              <p class="text-lg text-gray-700">
+                We keep handling marketing, optimize conversions, gather
+                testimonials, and scale. You focus on delivering value to
+                customers. We both profit as sales grow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBJECTION CRUSHER -->
+    <section class="py-20 px-6 bg-gray-50">
+      <div class="max-w-5xl mx-auto">
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center"
+        >
+          Your Questions, Answered
+        </h2>
+        <div class="space-y-8">
+          <div class="bg-white p-8 rounded-xl border border-gray-200">
+            <h3 class="text-2xl font-bold text-black mb-4">
+              “What if I’m not ‘expert’ enough?”
+            </h3>
+            <p class="text-lg text-gray-700">
+              You don’t need to be the world’s #1 expert. You just need to know
+              more than your target customer and be able to help them get
+              results. We help you position your expertise effectively.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl border border-gray-200">
+            <h3 class="text-2xl font-bold text-black mb-4">
+              “What if nobody buys?”
+            </h3>
+            <p class="text-lg text-gray-700">
+              We share that risk. That’s why we validate ideas, create
+              compelling offers, and drive qualified traffic. We don’t launch
+              products we don’t believe will sell.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl border border-gray-200">
+            <h3 class="text-2xl font-bold text-black mb-4">
+              “How much equity do I give up?”
+            </h3>
+            <p class="text-lg text-gray-700">
+              Depends on what you bring. Someone with expertise, an audience,
+              and content creation ability keeps more. Someone joining our
+              researched opportunity has a different split. Always transparent.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl border border-gray-200">
+            <h3 class="text-2xl font-bold text-black mb-4">
+              “Do I need an audience first?”
+            </h3>
+            <p class="text-lg text-gray-700">
+              Helps, but not required. We can drive cold traffic through ads,
+              partnerships, content marketing, and SEO. An audience accelerates
+              success but isn’t mandatory.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl border border-gray-200">
+            <h3 class="text-2xl font-bold text-black mb-4">
+              “What if I hate being on camera?”
+            </h3>
+            <p class="text-lg text-gray-700">
+              Not all digital products need video. Ebooks, templates, and
+              written content work great. If it’s a course, we can use screen
+              recordings, slides, or audio. We adapt to your strengths.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl border border-gray-200">
+            <h3 class="text-2xl font-bold text-black mb-4">
+              “How do we price the product?”
+            </h3>
+            <p class="text-lg text-gray-700">
+              We research your market, analyze competitors, and test pricing. We
+              start with what makes sense and adjust based on real data.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl border border-gray-200">
+            <h3 class="text-2xl font-bold text-black mb-4">
+              “What about customer support?”
+            </h3>
+            <p class="text-lg text-gray-700">
+              We set up systems that ensure smooth and seamless customer
+              support, so every inquiry is managed efficiently without you
+              having to handle each one personally.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl border border-gray-200">
+            <h3 class="text-2xl font-bold text-black mb-4">
+              “How long until I see revenue?”
+            </h3>
+            <p class="text-lg text-gray-700">
+              Digital products can generate revenue quickly once launched. We
+              optimize quickly so that profits can start coming in from month
+              one.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="cta" class="py-32 px-6 bg-black">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight"
+        >
+          It’s Your Turn
+        </h2>
+        <p class="text-xl sm:text-2xl text-gray-300 mb-12 leading-relaxed">
+          You know people would pay to learn what you know. You know waiting
+          won’t make it easier. Partner with people who can turn your knowledge
+          into a profitable digital product.
+        </p>
+        <p class="text-xl text-gray-300 mb-10">
+          No spending a year creating content. No tech overwhelm. And it starts
+          with a conversation.
+        </p>
+        <a
+          href="https://calendly.com/didiazubike/strategy-call"
+          target="_blank"
+          class="cta-btn inline-block px-12 py-5 rounded-full text-white text-xl font-bold mb-6"
+        >
+          Start the Conversation
+        </a>
+        <p class="text-gray-400 text-sm">
+          Free 30-minute strategy call. No pressure. No pitch.<br />Just honest
+          talk about what we can build together.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-gray-200 py-12 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-black text-2xl font-bold mb-4">Incomio</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Digital Products Studio - Your collaborative venture partner for
+              building scalable, profitable digital income.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-black font-bold mb-4">Our Studios</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#heroSection"
+                  class="text-gray-600 hover:text-black transition-colors text-sm"
+                  >Digital Products Studio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./blockchain.html"
+                  target="_blank"
+                  class="text-gray-600 hover:text-black transition-colors text-sm"
+                  >Blockchain Studio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ecommerce.html"
+                  target="_blank"
+                  class="text-gray-600 hover:text-black transition-colors text-sm"
+                  >E-Commerce Studio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./app.html"
+                  target="_blank"
+                  class="text-gray-600 hover:text-black transition-colors text-sm"
+                  >App Studio</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-black font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#dream"
+                  class="text-gray-600 hover:text-black transition-colors text-sm"
+                  >The Dream</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#difference"
+                  class="text-gray-600 hover:text-black transition-colors text-sm"
+                  >Our Approach</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#paths"
+                  class="text-gray-600 hover:text-black transition-colors text-sm"
+                  >Partnership Paths</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="text-gray-600 hover:text-black transition-colors text-sm"
+                  >Products</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-black font-bold mb-4">Get in Touch</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="mailto:hello@incomio.com"
+                  class="text-gray-600 hover:text-black transition-colors text-sm"
+                  >joinincomio@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://calendly.com/didiazubike/strategy-call"
+                  target="_blank"
+                  class="text-gray-600 hover:text-black transition-colors text-sm"
+                  >Book a Call</a
+                >
+              </li>
+            </ul>
+            <div class="flex gap-3 mt-4">
+              <a
+                href="https://x.com/IncomioVentures?t=04RHJeBY4VgF3u1tp0BNJA&s=09"
+                target="_blank"
+                class="w-8 h-8 rounded-full bg-gray-100 hover:bg-black hover:text-white flex items-center justify-center transition-colors"
+              >
+                <span class="text-sm">𝕏</span>
+              </a>
+              <a
+                href="mailto:hello@incomio.com"
+                class="w-8 h-8 rounded-full bg-gray-100 hover:bg-black hover:text-white flex items-center justify-center transition-colors"
+              >
+                <span class="text-sm">📧</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-200 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-gray-500 text-sm">
+            © Incomio 2025. All rights reserved.
+          </p>
+          <div class="flex gap-6">
+            <a
+              href="#"
+              class="text-gray-500 hover:text-black transition-colors text-sm"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-black transition-colors text-sm"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const hamburgerIcon = document.getElementById("hamburgerIcon");
+      const closeIcon = document.getElementById("closeIcon");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        hamburgerIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
+
+      // Close menu when clicking on a link
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          hamburgerIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

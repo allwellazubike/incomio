@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="./output.css" rel="stylesheet" />
-   <script src="https://cdn.tailwindcss.com"></script>
+<link href="./css/output.css" rel="stylesheet" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
   <link rel="icon" href="./images/incomioboxed-icon-black-white.png" type="image/x-icon">
-  <title>App Studio | Incomio</title>
+  <title>E-Commerce Studio | Incomio</title>
   <style>
     .satoshi {
       font-family: 'Satoshi', sans-serif;
@@ -23,7 +23,7 @@
       background: linear-gradient(135deg, #4169E1, #1E3A8A);
     }
     
-        /* CTA Button styling */
+    /* CTA Button styling */
     .cta-btn {
       background: linear-gradient(135deg, #4169E1, #1E3A8A);
       transition: all 0.3s ease;
@@ -40,6 +40,35 @@
       backdrop-filter: blur(10px);
       background: rgba(255, 255, 255, 0.95);
     }
+    
+    /* Section fade-in animation */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+          /* CTA Button styling */
+    .cta-btn {
+      background: linear-gradient(135deg, #4169E1, #1E3A8A);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(65, 105, 225, 0.3);
+    }
+    
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(65, 105, 225, 0.4);
+    }
   </style>
 </head>
 <body class="bg-white satoshi">
@@ -47,8 +76,7 @@
   <!-- ========================================
        NAVIGATION BAR
        ======================================== -->
- 
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-6 py-4">
       <div class="flex items-center justify-between">
         <div class="w-[135px] font-bold text-black">
@@ -57,7 +85,6 @@
         
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center gap-8">
-
           <a href="./index.html" target="_blank" class="text-gray-700 hover:text-black transition-colors">Home</a>
           <a href="#difference" class="text-gray-700 hover:text-black transition-colors">Our Approach</a>
           <a href="#paths" class="text-gray-700 hover:text-black transition-colors">Partnership Paths</a>
@@ -81,14 +108,6 @@
     <!-- Mobile Dropdown Menu -->
     <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200 shadow-lg">
       <div class="px-6 py-4 space-y-3">
-
-<!-- <a href="./index.html" class="text-gray-700 hover:text-black transition-colors">Home</a>
-          <a href="#difference" class="text-gray-700 hover:text-black transition-colors">Our Approach</a>
-          <a href="#paths" class="text-gray-700 hover:text-black transition-colors">Partnership Paths</a>
-          <a href="#platforms" class="text-gray-700 hover:text-black transition-colors">Platforms</a>
-          <a href="#process" class="text-gray-700 hover:text-black transition-colors">How It Works</a>
-          <a href="#cta" class="cta-btn px-6 py-2 rounded-full text-white text-sm font-medium">Get Started</a> -->
-
         <a href="./index.html" target="_blank" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Home</a>
         <a href="#difference" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Our Approach</a>
         <a href="#paths" class="block py-3 px-4 text-gray-700 hover:bg-gray-100 hover:text-black rounded-lg transition-colors">Partnership Paths</a>
@@ -99,18 +118,17 @@
     </div>
   </nav>
 
-  
   <!-- ========================================
        HERO SECTION
        ======================================== -->
   <section id="heroSection" class="pt-32 pb-20 px-6">
     <div class="max-w-5xl mx-auto text-center">
       <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-black mb-8 leading-tight">
-        Build a Profitable App<br><span class="italic">Without Overwhelm</span>
+        Build a Profitable<br>E-Commerce Business<br><span class="italic">Without Guesswork</span>
       </h1>
       
       <p class="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto mb-12 leading-relaxed">
-        You've seen apps generate millions in revenue. You've watched founders exit for life-changing money. Now partner with Incomio to build yours. No massive dev costs. No technical headaches. No going it alone.
+        You've seen the success stories. Now partner with Incomio to build yours. Whether it's Shopify, Amazon, eBay, private label, or multi-channel - we handle the execution, you share the profits. No massive course fees. No guessing. You don't have to figure it out on your own.
       </p>
       
       <a href="https://calendly.com/didiazubike/strategy-call" target="_blank" class="cta-btn inline-block px-10 py-4 rounded-full text-white text-lg font-medium">
@@ -125,21 +143,21 @@
   <section id="dream" class="py-20 px-6 bg-gray-50">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-12 text-center">
-        You've Seen People Who Make<br>Serious Money with Apps
+        You've Seen People Making<br>Real Money with E-Commerce
       </h2>
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         <div class="bg-white p-8 rounded-lg border border-gray-200">
-          <p class="text-lg text-gray-800">SaaS apps generating 5-7 figures per month in recurring revenue.</p>
+          <p class="text-lg text-gray-800">Shopify stores generating 5-6 figures per month.</p>
         </div>
         <div class="bg-white p-8 rounded-lg border border-gray-200">
-          <p class="text-lg text-gray-800">Niche productivity tools selling for 7 figures.</p>
+          <p class="text-lg text-gray-800">Amazon FBA sellers scaling to six figures.</p>
         </div>
         <div class="bg-white p-8 rounded-lg border border-gray-200">
-          <p class="text-lg text-gray-800">Subscription apps with thousands of paying users.</p>
+          <p class="text-lg text-gray-800">Multi-channel sellers dominating multiple platforms.</p>
         </div>
         <div class="bg-white p-8 rounded-lg border border-gray-200">
-          <p class="text-lg text-gray-800">Mobile apps downloaded millions of times.</p>
+          <p class="text-lg text-gray-800">Private label brands making millions in sales.</p>
         </div>
       </div>
       
@@ -149,44 +167,44 @@
       
       <div class="max-w-4xl mx-auto">
         <h3 class="text-3xl font-bold text-black mb-8 text-center">
-          But here's what they don't tell you:
+          But here's what the gurus don't tell you:
         </h3>
         
         <div class="space-y-6">
           <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
             <span class="text-red-500 text-xl flex-shrink-0">✕</span>
-            <p class="text-lg text-gray-800">App development can cost a lot if you are not grounded</p>
+            <p class="text-lg text-gray-800">Most people lose so much money testing and marketing products that don't sell</p>
           </div>
           
           <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
             <span class="text-red-500 text-xl flex-shrink-0">✕</span>
-            <p class="text-lg text-gray-800">A bad developer can waste your time and money</p>
+            <p class="text-lg text-gray-800">Store setup is the easy part - driving profitable traffic is where most people fail</p>
           </div>
           
           <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
             <span class="text-red-500 text-xl flex-shrink-0">✕</span>
-            <p class="text-lg text-gray-800">Most apps fail because of poor product-market fit, not bad code</p>
+            <p class="text-lg text-gray-800">Whether it's Shopify, Amazon FBA, eBay, or your own store, you need to know how to properly navigate the platform for success</p>
           </div>
           
           <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
             <span class="text-red-500 text-xl flex-shrink-0">✕</span>
-            <p class="text-lg text-gray-800">Getting users to download can be hard. Getting them to PAY can be even harder</p>
+            <p class="text-lg text-gray-800">Inventory management can drain your bank account fast</p>
           </div>
           
           <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
             <span class="text-red-500 text-xl flex-shrink-0">✕</span>
-            <p class="text-lg text-gray-800">Success depends heavily on marketing too, not just building</p>
+            <p class="text-lg text-gray-800">One bad supplier can drag your brand back</p>
           </div>
           
           <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
             <span class="text-red-500 text-xl flex-shrink-0">✕</span>
-            <p class="text-lg text-gray-800">Growth means nothing if everyone leaves. Retention is key</p>
+            <p class="text-lg text-gray-800">Choosing the wrong platform wastes months of your time</p>
           </div>
         </div>
         
         <p class="text-2xl font-bold text-center text-black mt-16">
-          You need more than a Coach.<br>
-          <span class="text-blue-600">You need a partner who can build, launch, and grow apps profitably.</span>
+          You need more than a course.<br>
+          <span class="text-blue-600">You need a partner who's genuinely passionate about your success.</span>
         </p>
       </div>
     </div>
@@ -198,41 +216,31 @@
   <section id="difference" class="py-20 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center">
-        How We Do Apps<br><span class="italic">Differently</span>
+        How We Do E-Commerce<br><span class="italic">Differently</span>
       </h2>
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div class="space-y-6">
           <div class="border-l-4 border-black pl-6">
-            <h3 class="text-2xl font-bold text-black mb-3">No Struggling to Find a Good Dev Team</h3>
-            <p class="text-lg text-gray-700">You don't have to waste time searching, hiring, or managing developers. We bring a proven team that knows how to turn ideas into successful apps.</p>
+            <h3 class="text-2xl font-bold text-black mb-3">No $1k-$10k Courses</h3>
+            <p class="text-lg text-gray-700">We don't sell you information. We pour in our time and build the business with you.</p>
           </div>
           
           <div class="border-l-4 border-black pl-6">
-            <h3 class="text-2xl font-bold text-black mb-3">No Technical Headaches</h3>
-            <p class="text-lg text-gray-700">We handle design, development, deployment, and maintenance. You focus on your vision and your users, we take care of the tech.</p>
-          </div>
-          
-          <div class="border-l-4 border-black pl-6">
-            <h3 class="text-2xl font-bold text-black mb-3">No Guessing on Features</h3>
-            <p class="text-lg text-gray-700">We validate ideas early, build MVPs fast, and make improvements based on real user feedback. No wasting months building things nobody wants.</p>
+            <h3 class="text-2xl font-bold text-black mb-3">No Guessing on Products or Platforms</h3>
+            <p class="text-lg text-gray-700">We research, validate, and choose the right model for your goals. You don't waste money on products that won't sell or platforms that don't fit.</p>
           </div>
         </div>
         
         <div class="space-y-6">
           <div class="border-l-4 border-black pl-6">
-            <h3 class="text-2xl font-bold text-black mb-3">No Massive Upfront Consulting Fees</h3>
-            <p class="text-lg text-gray-700">We share the risk. When your app makes money, we both make money. That's how partnership should work.</p>
+            <h3 class="text-2xl font-bold text-black mb-3">No Handling It Alone</h3>
+            <p class="text-lg text-gray-700">From store setup to traffic to fulfillment - we're in it with you at every step.</p>
           </div>
           
           <div class="border-l-4 border-black pl-6">
-            <h3 class="text-2xl font-bold text-black mb-3">No App with Zero Users</h3>
-            <p class="text-lg text-gray-700">We don't just build it and hope people show up. From day one, we plan and run marketing strategies for user acquisition: organic growth, paid ads, influencer outreach, and more, so your app actually gets traction.</p>
-          </div>
-          
-          <div class="border-l-4 border-black pl-6">
-            <h3 class="text-2xl font-bold text-black mb-3">No Users Slipping Away</h3>
-            <p class="text-lg text-gray-700">Getting users is just the start. We help you keep them through smart retention tactics: onboarding flows, push and email campaigns, personalized experiences, and data-driven updates that keep users coming back.</p>
+            <h3 class="text-2xl font-bold text-black mb-3">No Massive Upfront Investment</h3>
+            <p class="text-lg text-gray-700">No huge consulting fees. We share the risk. When the store makes money, we both make money.</p>
           </div>
         </div>
       </div>
@@ -252,10 +260,10 @@
         <!-- Path 1 -->
         <div class="bg-white p-10 rounded-2xl border-2 border-gray-200">
           <div class="bg-black text-white px-4 py-2 rounded-full inline-block mb-6 text-sm font-bold">PATH 1</div>
-          <h3 class="text-3xl font-bold text-black mb-4">You Have an App Idea</h3>
-          <p class="text-xl text-gray-700 mb-8">You Know What Problem Needs Solving</p>
+          <h3 class="text-3xl font-bold text-black mb-4">You Have a Product/Niche Idea</h3>
+          <p class="text-xl text-gray-700 mb-8">You Know What You Want to Sell</p>
           <p class="text-lg text-gray-700 mb-8">
-            Maybe you've experienced the problem yourself. Maybe you've heard your audience complain about it repeatedly. Maybe you just see the gap in the market.
+            Maybe you've spotted a gap in the market. Maybe you have an audience that needs specific products. Maybe you just know what should exist.
           </p>
           
           <div class="mb-8">
@@ -263,15 +271,15 @@
             <ul class="space-y-3">
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Your app concept or vision</span>
+                <span class="text-gray-700">Your product or niche idea</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Market knowledge or user insights</span>
+                <span class="text-gray-700">Market knowledge or audience (if you have it)</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Your commitment to the project</span>
+                <span class="text-gray-700">Your commitment</span>
               </li>
             </ul>
           </div>
@@ -281,23 +289,23 @@
             <ul class="space-y-3">
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Full app development (design, build, deploy)</span>
+                <span class="text-gray-700">Platform selection and store setup</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Technical architecture and infrastructure</span>
+                <span class="text-gray-700">Product sourcing and supplier vetting</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">App store optimization and launch strategy</span>
+                <span class="text-gray-700">Store design and conversion optimization</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">User acquisition and growth marketing</span>
+                <span class="text-gray-700">Traffic strategy (ads, SEO, influencers)</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Ongoing updates, maintenance, and optimization</span>
+                <span class="text-gray-700">Operations and fulfillment coordination</span>
               </li>
             </ul>
           </div>
@@ -306,10 +314,10 @@
         <!-- Path 2 -->
         <div class="bg-white p-10 rounded-2xl border-2 border-blue-600">
           <div class="blue-gradient text-white px-4 py-2 rounded-full inline-block mb-6 text-sm font-bold">PATH 2</div>
-          <h3 class="text-3xl font-bold text-black mb-4">We Have App Opportunities</h3>
-          <p class="text-xl text-gray-700 mb-8">We've Identified Profitable Ideas</p>
+          <h3 class="text-3xl font-bold text-black mb-4">We Have Profitable Niches Researched</h3>
+          <p class="text-xl text-gray-700 mb-8">We've Found the Opportunities</p>
           <p class="text-lg text-gray-700 mb-8">
-            We've researched app opportunities in profitable niches - productivity, health, finance, make money online, education, niche tools. We need the right partner who understands the audience or has expertise in the space.
+            We've researched profitable products, niches, and e-commerce models. We just need the right partner - someone who understands the audience or can create content around the products.
           </p>
           
           <div class="mb-8">
@@ -317,19 +325,19 @@
             <ul class="space-y-3">
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Validated app concept</span>
+                <span class="text-gray-700">Validated product and model research</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Full technical development</span>
+                <span class="text-gray-700">Full store build and launch</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Launch and marketing strategy</span>
+                <span class="text-gray-700">Marketing and traffic generation</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Operations and user growth</span>
+                <span class="text-gray-700">Operations and scaling</span>
               </li>
             </ul>
           </div>
@@ -339,15 +347,19 @@
             <ul class="space-y-3">
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Expertise or audience in the niche</span>
+                <span class="text-gray-700">Expertise in the niche (fitness, beauty, pets, tech, etc.)</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Content creation or community building</span>
+                <span class="text-gray-700">Content creation or audience building skills</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-blue-600 mt-1">•</span>
-                <span class="text-gray-700">Domain knowledge that makes the app better</span>
+                <span class="text-gray-700">Customer connection</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-blue-600 mt-1">•</span>
+                <span class="text-gray-700">Little startup fund</span>
               </li>
             </ul>
           </div>
@@ -362,53 +374,43 @@
   <section id="platforms" class="py-20 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-16 text-center">
-        Apps & Platforms<br>We Build
+        E-Commerce Models &<br>Platforms We Build
       </h2>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
-          <h3 class="text-2xl font-bold text-black mb-4">Mobile Apps (iOS & Android)</h3>
-          <p class="text-gray-700">Native or cross-platform apps available on App Store and Google Play. Perfect for reaching mobile-first users.</p>
+          <h3 class="text-2xl font-bold text-black mb-4">Shopify DTC Stores</h3>
+          <p class="text-gray-700">Full control over your brand, pricing, and customer experience. Perfect for building a sellable asset.</p>
         </div>
         
         <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
-          <h3 class="text-2xl font-bold text-black mb-4">Web Applications (SaaS)</h3>
-          <p class="text-gray-700">Browser-based tools accessible anywhere. Subscription models with recurring revenue. Lower barrier to entry for users.</p>
+          <h3 class="text-2xl font-bold text-black mb-4">Amazon FBA</h3>
+          <p class="text-gray-700">Leverage Amazon's massive traffic and fulfillment. Launch private label products without warehousing headaches.</p>
         </div>
         
         <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
-          <h3 class="text-2xl font-bold text-black mb-4">Progressive Web Apps (PWAs)</h3>
-          <p class="text-gray-700">Combine web and mobile experiences. No app store approval needed. Works across all devices.</p>
+          <h3 class="text-2xl font-bold text-black mb-4">eBay Stores</h3>
+          <p class="text-gray-700">Tap into eBay's established marketplace and buyer base. Great for unique products and collectibles.</p>
         </div>
         
         <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
-          <h3 class="text-2xl font-bold text-black mb-4">Productivity & Tool Apps</h3>
-          <p class="text-gray-700">Workflow automation, organization tools, niche calculators, specialized software for specific industries.</p>
+          <h3 class="text-2xl font-bold text-black mb-4">Private Label E-Commerce</h3>
+          <p class="text-gray-700">Build your own branded products and sell across multiple platforms or your own store.</p>
         </div>
         
         <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
-          <h3 class="text-2xl font-bold text-black mb-4">Health & Wellness Apps</h3>
-          <p class="text-gray-700">Fitness tracking, meal planning, mental health tools, meditation apps, habit trackers.</p>
+          <h3 class="text-2xl font-bold text-black mb-4">Multi-Channel E-Commerce</h3>
+          <p class="text-gray-700">Why choose one platform? Sell on Shopify + Amazon + eBay + other platforms simultaneously to maximize reach and revenue.</p>
         </div>
         
         <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
-          <h3 class="text-2xl font-bold text-black mb-4">Education & Course Apps</h3>
-          <p class="text-gray-700">Learning platforms, skill-building tools, membership apps for educational content.</p>
+          <h3 class="text-2xl font-bold text-black mb-4">Subscription E-Commerce</h3>
+          <p class="text-gray-700">Recurring revenue through monthly product deliveries. The holy grail of e-commerce cash flow.</p>
         </div>
         
-        <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
-          <h3 class="text-2xl font-bold text-black mb-4">Service Marketplace Apps</h3>
-          <p class="text-gray-700">Connect service providers with customers. Two-sided marketplace models with built-in revenue.</p>
-        </div>
-        
-        <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
-          <h3 class="text-2xl font-bold text-black mb-4">Community & Social Apps</h3>
-          <p class="text-gray-700">Niche social networks, community platforms, interest-based connection apps.</p>
-        </div>
-        
-        <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors">
-          <h3 class="text-2xl font-bold text-black mb-4">Fintech & Money Apps</h3>
-          <p class="text-gray-700">Budgeting tools, investment trackers, crypto wallets, personal finance management.</p>
+        <div class="p-8 border-2 border-gray-200 rounded-xl hover:border-blue-600 transition-colors md:col-span-2 lg:col-span-1">
+          <h3 class="text-2xl font-bold text-black mb-4">Print on Demand</h3>
+          <p class="text-gray-700">Test designs and products with zero inventory risk. Scale what sells.</p>
         </div>
       </div>
     </div>
@@ -426,42 +428,42 @@
       <div class="space-y-6">
         <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
           <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
-          <p class="text-lg text-gray-800">You've been watching app success stories and want to build your own</p>
+          <p class="text-lg text-gray-800">You've been watching e-commerce success stories and want to build your own</p>
         </div>
         
         <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
           <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
-          <p class="text-lg text-gray-800">You have an app idea but don't want to handle everything on your own</p>
+          <p class="text-lg text-gray-800">You've bought courses but got stuck on execution</p>
         </div>
         
         <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
           <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
-          <p class="text-lg text-gray-800">You've experienced a problem repeatedly and know an app could solve it</p>
+          <p class="text-lg text-gray-800">You have a product idea but don't know how to validate or launch it</p>
         </div>
         
         <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
           <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
-          <p class="text-lg text-gray-800">You're a coach, consultant, or expert who sees an app opportunity in your niche</p>
+          <p class="text-lg text-gray-800">You have an audience and want to monetize with physical products</p>
         </div>
         
         <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
           <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
-          <p class="text-lg text-gray-800">You have an audience that would pay for an app solution</p>
+          <p class="text-lg text-gray-800">You're a coach/expert in a niche and see product opportunities</p>
         </div>
         
         <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
           <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
-          <p class="text-lg text-gray-800">You're technical but need help with go-to-market and growth</p>
+          <p class="text-lg text-gray-800">You want to own an e-commerce business but don't want to handle everything solo</p>
         </div>
         
         <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
           <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
-          <p class="text-lg text-gray-800">You want recurring revenue instead of trading time for money</p>
+          <p class="text-lg text-gray-800">You're tired of trading time for money and want scalable revenue</p>
         </div>
         
         <div class="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
           <span class="text-blue-600 text-2xl flex-shrink-0">✓</span>
-          <p class="text-lg text-gray-800">You tried to build an app before but got burned by developers or ran out of money</p>
+          <p class="text-lg text-gray-800">You're not sure which platform is right (Shopify? Amazon? Multi-channel?) and need guidance</p>
         </div>
       </div>
     </div>
@@ -481,7 +483,7 @@
           <div class="absolute top-0 left-0 w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold">1</div>
           <div class="ml-20">
             <h3 class="text-2xl font-bold text-black mb-4">Free Discovery Call (30 mins)</h3>
-            <p class="text-lg text-gray-700">We talk about your app idea or show you opportunities we've identified. No sales pitch. Just honest conversation about what's buildable and profitable.</p>
+            <p class="text-lg text-gray-700">We talk about your idea or show you opportunities we've researched. No sales pitch. Just honest conversation about which e-commerce model fits best.</p>
           </div>
         </div>
         
@@ -489,15 +491,15 @@
           <div class="absolute top-0 left-0 w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold">2</div>
           <div class="ml-20">
             <h3 class="text-2xl font-bold text-black mb-4">Partnership Agreement</h3>
-            <p class="text-lg text-gray-700">If we're a fit, we agree on equity split, roles, and responsibilities. Everything clear from day one.</p>
+            <p class="text-lg text-gray-700">If we're a fit, we agree on equity split, roles, and profit distribution. Everything documented clearly.</p>
           </div>
         </div>
         
         <div class="relative">
           <div class="absolute top-0 left-0 w-16 h-16 bg-black text-white rounded-full flex items-center justify-center text-2xl font-bold">3</div>
           <div class="ml-20">
-            <h3 class="text-2xl font-bold text-black mb-4">Build & Launch (8-16 weeks)</h3>
-            <p class="text-lg text-gray-700">We design, develop, test, and launch your app. You stay involved in decisions but we handle the technical execution.</p>
+            <h3 class="text-2xl font-bold text-black mb-4">Build & Launch</h3>
+            <p class="text-lg text-gray-700">We build the store, source products, set up payment/fulfillment, and launch to first customers on the right platform(s).</p>
           </div>
         </div>
         
@@ -505,7 +507,7 @@
           <div class="absolute top-0 left-0 w-16 h-16 blue-gradient text-white rounded-full flex items-center justify-center text-2xl font-bold">4</div>
           <div class="ml-20">
             <h3 class="text-2xl font-bold text-black mb-4">Grow & Scale</h3>
-            <p class="text-lg text-gray-700">We market the app, acquire users, optimize conversions, and iterate based on feedback. We both profit as the app grows.</p>
+            <p class="text-lg text-gray-700">We drive traffic, optimize conversions, manage operations. You focus on what you do best. We both profit as revenue grows.</p>
           </div>
         </div>
       </div>
@@ -523,43 +525,18 @@
       
       <div class="space-y-8">
         <div class="bg-white p-8 rounded-xl border border-gray-200">
-          <h3 class="text-2xl font-bold text-black mb-4">"What if nobody downloads the app?"</h3>
-          <p class="text-lg text-gray-700">We share that risk. That's why we validate ideas before building and focus on apps that solve real problems for real people.</p>
-        </div>
-        
-        <div class="bg-white p-8 rounded-xl border border-gray-200">
-          <h3 class="text-2xl font-bold text-black mb-4">"How much equity do I give up?"</h3>
-          <p class="text-lg text-gray-700">Depends on what you bring. Someone with a validated idea and an audience keeps more equity. Someone joining our researched opportunity has a different split. We're transparent.</p>
-        </div>
-        
-        <div class="bg-white p-8 rounded-xl border border-gray-200">
-          <h3 class="text-2xl font-bold text-black mb-4">"Do I need technical skills?"</h3>
-          <p class="text-lg text-gray-700">No. We handle all the technical work. You need to understand your users and the problem you're solving, but we build everything.</p>
-        </div>
-        
-        <div class="bg-white p-8 rounded-xl border border-gray-200">
-          <h3 class="text-2xl font-bold text-black mb-4">"What about app store approvals?"</h3>
-          <p class="text-lg text-gray-700">We handle that. Apple and Google have guidelines we follow. Web apps don't need approval at all.</p>
-        </div>
-        
-        <div class="bg-white p-8 rounded-xl border border-gray-200">
-          <h3 class="text-2xl font-bold text-black mb-4">"How do we make money from the app?"</h3>
-          <p class="text-lg text-gray-700">Subscriptions, one-time purchases, freemium models, in-app purchases, ads, or lead generation. We choose the model that fits your app and users.</p>
-        </div>
-        
-        <div class="bg-white p-8 rounded-xl border border-gray-200">
           <h3 class="text-2xl font-bold text-black mb-4">"What if I don't have an audience?"</h3>
-          <p class="text-lg text-gray-700">Not required. We can drive cold traffic through ads, ASO (App Store Optimization), content marketing, and partnerships.</p>
+          <p class="text-lg text-gray-700">Not required. We can drive cold traffic. An audience helps but isn't mandatory.</p>
         </div>
         
         <div class="bg-white p-8 rounded-xl border border-gray-200">
-          <h3 class="text-2xl font-bold text-black mb-4">"How long until the app makes money?"</h3>
-          <p class="text-lg text-gray-700">In some cases, apps can take time to get traction, but we optimize aggressively to get profits ASAP.</p>
+          <h3 class="text-2xl font-bold text-black mb-4">"How do I know which platform is right for me?"</h3>
+          <p class="text-lg text-gray-700">That's our job. We assess your product, budget, goals, and skills - then recommend the best platform or multi-channel strategy.</p>
         </div>
         
         <div class="bg-white p-8 rounded-xl border border-gray-200">
-          <h3 class="text-2xl font-bold text-black mb-4">"What about updates and maintenance?"</h3>
-          <p class="text-lg text-gray-700">We handle ongoing updates, bug fixes, and feature additions. Apps aren't "launch and forget" - they need continuous improvement.</p>
+          <h3 class="text-2xl font-bold text-black mb-4">"How long until I see revenue?"</h3>
+          <p class="text-lg text-gray-700">E-commerce takes time to scale, but we optimize quickly to deliver profits from month one. We focus on profitability from the start, not burning cash at a loss for months like many others do.</p>
         </div>
       </div>
     </div>
@@ -571,15 +548,15 @@
   <section id="cta" class="py-32 px-6 bg-black">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
-        Stop Watching Other People<br>Build Successful Apps
+        Stop Watching Other People Win In The<br> E-Commerce Space
       </h2>
       
       <p class="text-xl sm:text-2xl text-gray-300 mb-12 leading-relaxed">
-        You know apps can generate life-changing revenue. You know waiting won't make it easier. Partner with people who can take your idea from concept to profitable reality.
+        You know the opportunity is real. You know waiting won't make it easier. Partner with people who know what works and who want you to succeed as much as they do.
       </p>
       
       <p class="text-xl text-gray-300 mb-10">
-        No huge consulting fees. No technical nightmares. Just a conversation about building something users will actually love.
+        No courses. No massive fees. Just a conversation about building something profitable together.
       </p>
       
       <a href="https://calendly.com/didiazubike/strategy-call" target="_blank" class="cta-btn inline-block px-12 py-5 rounded-full text-white text-xl font-bold mb-6">
@@ -605,7 +582,7 @@
         <div>
           <h3 class="text-black text-2xl font-bold mb-4">Incomio</h3>
           <p class="text-gray-600 text-sm leading-relaxed">
-            App Studio - Your collaborative venture partner for building profitable applications.
+            E-Commerce Studio - Your collaborative venture partner for building profitable online stores.
           </p>
         </div>
 
@@ -613,9 +590,9 @@
         <div>
           <h4 class="text-black font-bold mb-4">Our Studios</h4>
           <ul class="space-y-2">
-            <li><a href="#heroSection" class="text-gray-600 hover:text-black transition-colors text-sm">App Studio</a></li>
-            <li><a href="./ecommerce.html" target="_blank" class="text-gray-600 hover:text-black transition-colors text-sm">E-Commerce Studio</a></li>
+            <li><a href="#heroSection" class="text-gray-600 hover:text-black transition-colors text-sm">E-Commerce Studio</a></li>
             <li><a href="./digit.html" target="_blank" class="text-gray-600 hover:text-black transition-colors text-sm">Digital Products Studio</a></li>
+            <li><a href="./app.html" target="_blank" class="text-gray-600 hover:text-black transition-colors text-sm">App Studio</a></li>
             <li><a href="./blockchain.html" target="_blank" class="text-gray-600 hover:text-black transition-colors text-sm">Blockchain Studio</a></li>
           </ul>
         </div>
@@ -635,7 +612,7 @@
         <div>
           <h4 class="text-black font-bold mb-4">Get in Touch</h4>
           <ul class="space-y-2">
-            <li><a href="joinincomio@gmail.com" class="text-gray-600 hover:text-black transition-colors text-sm">joinincomio@gmail.com</a></li>
+            <li><a href="mailto:hello@incomio.com" class="text-gray-600 hover:text-black transition-colors text-sm">joinincomio@gmail.com</a></li>
             <li><a href="https://calendly.com/didiazubike/strategy-call" target="_blank" class="text-gray-600 hover:text-black transition-colors text-sm">Book a Call</a></li>
           </ul>
           <!-- Social Links -->
@@ -643,7 +620,7 @@
             <a href="https://x.com/IncomioVentures?t=04RHJeBY4VgF3u1tp0BNJA&s=09" target="_blank" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-black hover:text-white flex items-center justify-center transition-colors">
               <span class="text-sm">𝕏</span>
             </a>
-            <a href="mailto:hello@incomio.com"  class="w-8 h-8 rounded-full bg-gray-100 hover:bg-black hover:text-white flex items-center justify-center transition-colors">
+            <a href="mailto:hello@incomio.com" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-black hover:text-white flex items-center justify-center transition-colors">
               <span class="text-sm">📧</span>
             </a>
           </div>
@@ -665,7 +642,7 @@
     </div>
   </footer>
 
-<script>
+ <script>
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
   const hamburgerIcon = document.getElementById('hamburgerIcon');
@@ -687,6 +664,7 @@
     });
   });
 </script>
-
+  
 </body>
 </html>
+

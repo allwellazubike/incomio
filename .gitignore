@@ -12,9 +12,6 @@ dist/
 # Uncomment this next line only if you're okay regenerating output.css each time
 # src/css/output.css
 
-# Local development servers
-src/servers/
-
 # System files
 .DS_Store
 Thumbs.db
